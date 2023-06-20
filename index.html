@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Станки "старк"</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!--  scripts  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+            integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <a href="index.html" class="logo"><img src="src/images/logos/Logo.svg" alt=""></a>
+        <div class="btn-section">
+            <div class="btn catalog">
+                <div class="icon"><img src="src/images/icons/grid.svg" alt=""></div>
+                <p>Каталог</p>
+            </div>
+            <div class="btn compare">
+                <div class="icon"><img src="src/images/icons/compare.svg" alt=""></div>
+                <p>сравнение</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="">Лизинг</a></li>
+                <li><a href="">Сервис</a></li>
+                <li><a href="">Вакансии</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="contact-section">
+            <div class="contacts">
+                <a href="tel:+78005055891" class="phone">8 (800) 505-58-91</a>
+                <a href="mailto:zakaz@stanki-stark.ru" class="email">zakaz@stanki-stark.ru</a>
+            </div>
+            <div class="btn recall">Обратный звонок</div>
+        </div>
+    </div>
+    <div class="catalog-menu">
+        <div class="container">
+            <div class="header">
+                <div class="title">каталог</div>
+                <div class="count">1 102 товара</div>
+            </div>
+            <div class="body">
+                <label for="search" class="custom-input  icon">
+                    <span class="icon"><img src="src/images/icons/search.svg" alt=""></span>
+                    <input type="text" id="search" placeholder="Поиск по названию">
+                </label>
+                <div class="categories">
+                    <div class="item-c">Станки</div>
+                    <div class="item-c">зап.части</div>
+                    <div class="item-c">профильное</div>
+                    <div class="item-c">прочее</div>
+                </div>
+                <div class="product">
+                    <div class="header">
+                        <div class="info">
+                            <div class="name">Трубогибы</div>
+                            <div class="count">2 024 станков</div>
+                            <a href="catalog.html" class="link">
+                                <div class="icon">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.5 15H22.5M22.5 15L16.25 8.75M22.5 15L16.25 21.25" stroke="white"
+                                              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <img src="src/images/machines/trubi.jpg" alt="">
+                    </div>
+                    <div class="body accordion" id="accordionCatalog">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    по степни автоматизации
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span>для гибки проволоки Ø6 - Ø10</span>
+                                    <p>с 6-10 диаметр</p>
+                                    <p>с 3- 8 диаметр</p>
+                                    <p>с 2-6 диаметр</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                    по степни автоматизации
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span>для гибки проволоки Ø6 - Ø10</span>
+                                    <p>с 6-10 диаметр</p>
+                                    <p>с 3- 8 диаметр</p>
+                                    <p>с 2-6 диаметр</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    по степни автоматизации
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span>для гибки проволоки Ø6 - Ø10</span>
+                                    <p>с 6-10 диаметр</p>
+                                    <p>с 3- 8 диаметр</p>
+                                    <p>с 2-6 диаметр</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="header">
+                        <div class="info">
+                            <div class="name">Трубогибы</div>
+                            <div class="count">2 024 станков</div>
+                            <a href="catalog.html" class="link">
+                                <div class="icon">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.5 15H22.5M22.5 15L16.25 8.75M22.5 15L16.25 21.25" stroke="white"
+                                              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <img src="src/images/machines/trubi.jpg" alt="">
+                    </div>
+                    <div class="body accordion" id="accordionCatalog2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
+                                    по степни автоматизации
+                                </button>
+                            </h2>
+                            <div id="collapse12" class="accordion-collapse collapse show"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span>для гибки проволоки Ø6 - Ø10</span>
+                                    <p>с 6-10 диаметр</p>
+                                    <p>с 3- 8 диаметр</p>
+                                    <p>с 2-6 диаметр</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse22" aria-expanded="true" aria-controls="collapse22">
+                                    по степни автоматизации
+                                </button>
+                            </h2>
+                            <div id="collapse22" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span>для гибки проволоки Ø6 - Ø10</span>
+                                    <p>с 6-10 диаметр</p>
+                                    <p>с 3- 8 диаметр</p>
+                                    <p>с 2-6 диаметр</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section>
+        <div class="landing-section">
+            <div class="landing-container">
+                <div class="swiper landing-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="top">
+                                        <p>Новинка</p>
+                                        <div class="tag">GP</div>
+                                    </div>
+                                    <div class="bottom">
+                                        <p>полуавтоматический станок</p>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>Идеальное соотношение цены, качества и функциональности;</li>
+                                    <li>
+                                        Высокое качество деталей и простота конструкции дают уверенную эксплуатацию с
+                                        загрузкой в 3 смены;
+                                    </li>
+                                    <li>Станок полуавтоматический дорновый, нет необходимости тратить время на зажим
+                                        трубы и
+                                        прочие операции;
+                                    </li>
+                                    <li>Регулируемые упоры для позиционирования заготовки по вылету;</li>
+                                    <li>Дорн с автоматической подачей, что позволяет получать грибы высокого качества;
+                                    </li>
+                                    <li>ЧПУ, сенсорная панель 7 дюймов - оптимальный размер для пользователя;</li>
+                                    <li>Пошаговое программирование на русском языке, быстрый выбор сохраненных программ,
+                                        ручной режим;
+                                    </li>
+                                    <li>Высокоточный датчик угла гиба, повторяемость ± 0.10 гр</li>
+                                    <li>Легкий, компактный с возможностью быстрого удлинения станины;</li>
+                                    <li>Работает даже от 220В, без дополнительных подключений;</li>
+                                    <li>Переналадка одна из самых быстрых и простых;</li>
+                                </ul>
+                                <div class="btn-container">
+                                    <a href="product.html" class="btn blue">подробнее</a>
+                                    <div class="slider-btn">
+                                        <div class="slider-btn prev">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.5 15H22.5M22.5 15L16.25 8.75M22.5 15L16.25 21.25"
+                                                      stroke="#024D7F" stroke-width="1.5" stroke-linecap="round"
+                                                      stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="slider-btn next">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.5 15H22.5M22.5 15L16.25 8.75M22.5 15L16.25 21.25"
+                                                      stroke="#024D7F" stroke-width="1.5" stroke-linecap="round"
+                                                      stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="src/images/machines/landing.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="video-section">
+            <div class="container video-container">
+                <iframe src="https://www.youtube.com/embed/oROKksNxB64" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="catalog-section">
+            <div class="container catalog-container">
+                <div class="product">
+                    <div class="header">
+                        <div class="info">
+                            <div class="name">Трубогибы</div>
+                            <div class="count">2 024 станков</div>
+                            <a href="catalog.html" class="link">
+                                <div class="icon">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.5 15H22.5M22.5 15L16.25 8.75M22.5 15L16.25 21.25" stroke="white"
+                                              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <img src="src/images/machines/trubi.jpg" alt="">
+                    </div>
+                    <div class="body accordion" id="accordionCatalog">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    по степни автоматизации
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span>для гибки проволоки Ø6 - Ø10</span>
+                                    <p>с 6-10 диаметр</p>
+                                    <p>с 3- 8 диаметр</p>
+                                    <p>с 2-6 диаметр</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                    по степни автоматизации
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span>для гибки проволоки Ø6 - Ø10</span>
+                                    <p>с 6-10 диаметр</p>
+                                    <p>с 3- 8 диаметр</p>
+                                    <p>с 2-6 диаметр</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    по степни автоматизации
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span>для гибки проволоки Ø6 - Ø10</span>
+                                    <p>с 6-10 диаметр</p>
+                                    <p>с 3- 8 диаметр</p>
+                                    <p>с 2-6 диаметр</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="header">
+                        <div class="info">
+                            <div class="name">Трубогибы</div>
+                            <div class="count">2 024 станков</div>
+                            <a href="catalog.html" class="link">
+                                <div class="icon">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.5 15H22.5M22.5 15L16.25 8.75M22.5 15L16.25 21.25" stroke="white"
+                                              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <img src="src/images/machines/trubi.jpg" alt="">
+                    </div>
+                    <div class="body accordion" id="accordionCatalog">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    по степни автоматизации
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span>для гибки проволоки Ø6 - Ø10</span>
+                                    <p>с 6-10 диаметр</p>
+                                    <p>с 3- 8 диаметр</p>
+                                    <p>с 2-6 диаметр</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                    по степни автоматизации
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span>для гибки проволоки Ø6 - Ø10</span>
+                                    <p>с 6-10 диаметр</p>
+                                    <p>с 3- 8 диаметр</p>
+                                    <p>с 2-6 диаметр</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    по степни автоматизации
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span>для гибки проволоки Ø6 - Ø10</span>
+                                    <p>с 6-10 диаметр</p>
+                                    <p>с 3- 8 диаметр</p>
+                                    <p>с 2-6 диаметр</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-p">
+                    <div class="photo"><img src="src/images/machines/trubi.jpg" alt=""></div>
+                    <div class="name">Трубогибочный гидравлический станок «GS 70»</div>
+                    <div class="description">Дорновый гидравлический трубогиб с позиционированием и ЧПУ</div>
+                    <div class="btn-section">
+                        <a href="product.html" class="btn blue">подробнее</a>
+                        <div class="play-video">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0521 11.5137C22.079 12.6538 23.0924 13.2238 23.43 13.9729C23.7243 14.626 23.7243 15.3739 23.43 16.027C23.0924 16.7761 22.079 17.3462 20.0521 18.4863L12.211 22.8969C10.2515 23.9991 9.27172 24.5503 8.46918 24.4595C7.76902 24.3804 7.13477 24.0094 6.72253 23.438C6.25 22.783 6.25 21.6589 6.25 19.4106V10.5894C6.25 8.34108 6.25 7.21693 6.72253 6.56194C7.13477 5.9905 7.76902 5.61956 8.46918 5.54041C9.27172 5.44969 10.2515 6.00081 12.211 7.10306L20.0521 11.5137Z"
+                                      stroke="#024D7F" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="compare">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 20V10M12.5 20V4M6.5 20V14" stroke="#024D7F" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-p">
+                    <div class="photo"><img src="src/images/machines/trubi.jpg" alt=""></div>
+                    <div class="name">Трубогибочный гидравлический станок «GS 70»</div>
+                    <div class="description">Дорновый гидравлический трубогиб с позиционированием и ЧПУ</div>
+                    <div class="btn-section">
+                        <a href="product.html" class="btn blue">подробнее</a>
+                        <div class="play-video">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0521 11.5137C22.079 12.6538 23.0924 13.2238 23.43 13.9729C23.7243 14.626 23.7243 15.3739 23.43 16.027C23.0924 16.7761 22.079 17.3462 20.0521 18.4863L12.211 22.8969C10.2515 23.9991 9.27172 24.5503 8.46918 24.4595C7.76902 24.3804 7.13477 24.0094 6.72253 23.438C6.25 22.783 6.25 21.6589 6.25 19.4106V10.5894C6.25 8.34108 6.25 7.21693 6.72253 6.56194C7.13477 5.9905 7.76902 5.61956 8.46918 5.54041C9.27172 5.44969 10.2515 6.00081 12.211 7.10306L20.0521 11.5137Z"
+                                      stroke="#024D7F" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="compare">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 20V10M12.5 20V4M6.5 20V14" stroke="#024D7F" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-p">
+                    <div class="photo"><img src="src/images/machines/trubi.jpg" alt=""></div>
+                    <div class="name">Трубогибочный гидравлический станок «GS 70»</div>
+                    <div class="description">Дорновый гидравлический трубогиб с позиционированием и ЧПУ</div>
+                    <div class="btn-section">
+                        <a href="product.html" class="btn blue">подробнее</a>
+                        <div class="play-video">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0521 11.5137C22.079 12.6538 23.0924 13.2238 23.43 13.9729C23.7243 14.626 23.7243 15.3739 23.43 16.027C23.0924 16.7761 22.079 17.3462 20.0521 18.4863L12.211 22.8969C10.2515 23.9991 9.27172 24.5503 8.46918 24.4595C7.76902 24.3804 7.13477 24.0094 6.72253 23.438C6.25 22.783 6.25 21.6589 6.25 19.4106V10.5894C6.25 8.34108 6.25 7.21693 6.72253 6.56194C7.13477 5.9905 7.76902 5.61956 8.46918 5.54041C9.27172 5.44969 10.2515 6.00081 12.211 7.10306L20.0521 11.5137Z"
+                                      stroke="#024D7F" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="compare">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 20V10M12.5 20V4M6.5 20V14" stroke="#024D7F" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-p">
+                    <div class="photo"><img src="src/images/machines/trubi.jpg" alt=""></div>
+                    <div class="name">Трубогибочный гидравлический станок «GS 70»</div>
+                    <div class="description">Дорновый гидравлический трубогиб с позиционированием и ЧПУ</div>
+                    <div class="btn-section">
+                        <a href="product.html" class="btn blue">подробнее</a>
+                        <div class="play-video">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0521 11.5137C22.079 12.6538 23.0924 13.2238 23.43 13.9729C23.7243 14.626 23.7243 15.3739 23.43 16.027C23.0924 16.7761 22.079 17.3462 20.0521 18.4863L12.211 22.8969C10.2515 23.9991 9.27172 24.5503 8.46918 24.4595C7.76902 24.3804 7.13477 24.0094 6.72253 23.438C6.25 22.783 6.25 21.6589 6.25 19.4106V10.5894C6.25 8.34108 6.25 7.21693 6.72253 6.56194C7.13477 5.9905 7.76902 5.61956 8.46918 5.54041C9.27172 5.44969 10.2515 6.00081 12.211 7.10306L20.0521 11.5137Z"
+                                      stroke="#024D7F" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="compare">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 20V10M12.5 20V4M6.5 20V14" stroke="#024D7F" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <a href="catalog.html" class="all-machines">Все станки</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="call-section">
+            <div class="container call-container">
+                <div class="text">
+                    <p>Наши станки славятся своей <span>функциональностью, уникальным ЧПУ</span>, а также <span>комплектующими</span>
+                        от лидирующих производителей</p>
+                    <p class="description">Используются компоненты лидирующих производителей в сфере машиностроения.
+                        Уникальное программное обеспечение и максимально понятный интерфейс, Корейские и Японские
+                        контроллеры. Богатое штатное оснащение станков без дополнительной доплаты, модульные приставки
+                        для расширения возможностей</p>
+                    <a href="catalog.html" class="btn blue">в каталог</a>
+                </div>
+                <div class="form">
+                    <p>Узнайте какой станок подойдет именно вам</p>
+                    <p class="description">Мы перезвоним в течение 3 минут, попросим вас<br>рассказать о задачах и
+                        подберем станок</p>
+                    <div class="btn white no-br" data-modal="consultation">
+                        получить консультацию
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="blog-section">
+            <div class="container blog-container">
+                <div class="item-b" style="background: url('src/images/other/blog.jpg')">
+                    <div class="header">
+                        <div class="tag">блог</div>
+                        <div class="date">7 апреля 2021</div>
+                    </div>
+                    <a href="blog-item.html">Автоматический гибочный станок для труб и прутка STARK 3D</a>
+                </div>
+                <div class="item-b" style="background: url('src/images/other/blog.jpg')">
+                    <div class="header">
+                        <div class="tag">блог</div>
+                        <div class="date">7 апреля 2021</div>
+                    </div>
+                    <a href="blog-item.html">Автоматический гибочный станок для труб и прутка STARK 3D</a>
+                </div>
+                <div class="item-b" style="background: url('src/images/other/blog.jpg')">
+                    <div class="header">
+                        <div class="tag">блог</div>
+                        <div class="date">7 апреля 2021</div>
+                    </div>
+                    <a href="blog-item.html">Автоматический гибочный станок для труб и прутка STARK 3D</a>
+                </div>
+                <div class="item-b" style="background: url('src/images/other/blog.jpg')">
+                    <div class="header">
+                        <div class="tag">блог</div>
+                        <div class="date">7 апреля 2021</div>
+                    </div>
+                    <a href="blog-item.html">Автоматический гибочный станок для труб и прутка STARK 3D</a>
+                </div>
+                <a href="blogs.html" class="btn blue no-br">все новости</a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="main-footer">
+            <nav>
+                <ul>
+                    <li><a href="">Трубогибы</a></li>
+                    <li><a href="">Проволкогибы</a></li>
+                    <li><a href="">Металшейпинг</a></li>
+                    <li><a href="">Оснастка</a></li>
+                    <li><a href="">Профилегибы</a></li>
+                    <li><a href="">Индивидуальный<br>проект</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Сертификаты</a></li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Лизинг</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Новости </a></li>
+                    <li><a href="">Статьи и видео</a></li>
+                    <li><a href="">Реквизиты<br>компании</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Применение<br>станков</a></li>
+                    <li><a href="">Блог</a></li>
+                    <li><a href="">Карта сайта</a></li>
+                    <li><a href="">Вопрос-ответ</a></li>
+                    <li><a href="">Обучение</a></li>
+                    <li><a href="">Политика</a></li>
+                </ul>
+            </nav>
+            <div class="form">
+                <div class="title">ЗАКАЖИТЕ обратный звонок!</div>
+                <div class="description">Необходимо уточнить цену или информацию о характеристиках трубогибочных,
+                    профильных
+                    <br>или проволокогибочных станков? Оставьте свои контакты - мы с Вами свяжемся.
+                </div>
+                <form data-typeForm="recall">
+                    <label for="name" class="custom-input white">
+                        <input type="text" id="name" placeholder="Ваше имя">
+                    </label>
+                    <label for="phone" class="custom-input white">
+                        <input type="text" id="phone" placeholder="Ваш номер телефона">
+                    </label>
+                    <label for="email" class="custom-input white">
+                        <input type="text" id="email" placeholder="Ваш E-mail">
+                    </label>
+                    <div class="btn blue no-br sendAjax">ОТПРАВИТЬ</div>
+                    <span>Нажимая на кнопку, вы даете <a href="privacy.html">согласие на обработку своих персональных данных</a></span>
+                </form>
+            </div>
+        </div>
+        <div class="second-footer">
+            <div class="info-block">
+                <p>© «Stark» 2014-2023 </p>
+                <p>ОГРН 1196313047534</p>
+                <p>ИНН 6320036399</p>
+            </div>
+            <div class="time-work">
+                <p>Время работы (МСК)</p>
+                <div class="time">8:00 - 16:00</div>
+            </div>
+            <div class="address">
+                <p>г. Тольятти, ул. Борковская,<br>
+                    влд. 36Б стр. 3, офис 1</p>
+            </div>
+            <a href="https://seo-rocket.ru/" class="develop">
+                <svg width="206" height="49" viewBox="0 0 206 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.2">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.42925 1.42925C0 2.8585 0 5.15884 0 9.75952V39.0381C0 43.6388 0 45.9391 1.42925 47.3684C2.8585 48.7976 5.15884 48.7976 9.75952 48.7976L22.1807 48.7976V33.7062L8.87226 26.0226L11.0903 22.1807L22.1011 28.5378V15.5265H26.5372L26.5372 28.5378L37.548 22.1807L39.766 26.0226L26.6169 33.6142V48.7976L39.0381 48.7976C43.6388 48.7976 45.9391 48.7976 47.3684 47.3684C48.7976 45.9391 48.7976 43.6388 48.7976 39.0381V9.75952C48.7976 5.15884 48.7976 2.8585 47.3684 1.42925C45.9391 0 43.6388 0 39.0381 0H9.75952C5.15884 0 2.8585 0 1.42925 1.42925Z"
+                              fill="white"/>
+                        <path d="M64.0673 14.3291V19.394H62.0653V5.88086H68.0311C69.299 5.88086 70.3601 6.28792 71.2142 7.10205C72.0684 7.90283 72.4955 8.90381 72.4955 10.105C72.4955 11.3062 72.0684 12.3138 71.2142 13.1279C70.3601 13.9287 69.299 14.3291 68.0311 14.3291H64.0673ZM68.0311 7.74268H64.0673V12.4873H68.0311C68.7118 12.4873 69.279 12.2604 69.7328 11.8066C70.1999 11.3529 70.4335 10.7856 70.4335 10.105C70.4335 9.42432 70.1999 8.86377 69.7328 8.42334C69.279 7.96956 68.7118 7.74268 68.0311 7.74268Z"
+                              fill="white"/>
+                        <path d="M77.5396 10.145C78.7008 10.145 79.6951 10.5387 80.5225 11.3262V10.3853H82.3243V19.394H80.5225V18.4531C79.6951 19.2406 78.7008 19.6343 77.5396 19.6343C76.2984 19.6343 75.2441 19.1805 74.3765 18.273C73.5357 17.3787 73.1153 16.251 73.1153 14.8896C73.1153 13.5417 73.5357 12.4139 74.3765 11.5063C75.2441 10.5988 76.2984 10.145 77.5396 10.145ZM79.6817 12.8076C79.1612 12.2471 78.5139 11.9668 77.7398 11.9668C76.9791 11.9668 76.3251 12.2471 75.7779 12.8076C75.2574 13.3682 74.9971 14.0622 74.9971 14.8896C74.9971 15.7171 75.2574 16.4111 75.7779 16.9717C76.3251 17.5322 76.9791 17.8125 77.7398 17.8125C78.5139 17.8125 79.1612 17.5322 79.6817 16.9717C80.2156 16.4245 80.4825 15.7305 80.4825 14.8896C80.4825 14.0488 80.2156 13.3548 79.6817 12.8076Z"
+                              fill="white"/>
+                        <path d="M84.0211 17.0317L85.8429 16.5513C86.1632 17.4455 86.8906 17.8926 88.025 17.8926C88.6656 17.8926 89.1928 17.7591 89.6066 17.4922C90.0203 17.2253 90.2272 16.8983 90.2272 16.5112C90.2272 16.231 90.1204 15.9974 89.9068 15.8105C89.6933 15.6237 89.4264 15.5303 89.1061 15.5303H86.9039V14.0088H89.006C89.2996 14.0088 89.5465 13.922 89.7467 13.7485C89.9469 13.575 90.047 13.3682 90.047 13.1279C90.047 12.7809 89.8601 12.4873 89.4864 12.2471C89.1127 12.0068 88.6389 11.8867 88.065 11.8867C86.944 11.8867 86.2166 12.3338 85.8829 13.228L84.0611 12.7676C84.3281 11.9535 84.8286 11.3128 85.5626 10.8457C86.2967 10.3786 87.1575 10.145 88.1451 10.145C89.2262 10.145 90.1271 10.4053 90.8478 10.9258C91.5685 11.4463 91.9288 12.1003 91.9288 12.8877C91.9288 13.6484 91.5885 14.2624 90.9078 14.7295C91.6953 15.21 92.089 15.884 92.089 16.7515C92.089 17.5789 91.7086 18.2663 90.9479 18.8135C90.1738 19.3607 89.2128 19.6343 88.065 19.6343C87.0641 19.6343 86.2032 19.4074 85.4825 18.9536C84.7618 18.4865 84.2747 17.8459 84.0211 17.0317Z"
+                              fill="white"/>
+                        <path d="M95.6693 23.8984H93.8676V10.3853H95.6693V11.3262C96.4968 10.5387 97.4911 10.145 98.6523 10.145C99.9068 10.145 100.955 10.5988 101.795 11.5063C102.649 12.4006 103.077 13.5283 103.077 14.8896C103.077 16.251 102.649 17.3787 101.795 18.273C100.955 19.1805 99.9068 19.6343 98.6523 19.6343C97.4911 19.6343 96.4968 19.2406 95.6693 18.4531V23.8984ZM100.394 12.8076C99.8734 12.2471 99.2261 11.9668 98.4521 11.9668C97.6913 11.9668 97.0373 12.2471 96.4901 12.8076C95.9696 13.3682 95.7094 14.0622 95.7094 14.8896C95.7094 15.7171 95.9696 16.4111 96.4901 16.9717C97.0373 17.5322 97.6913 17.8125 98.4521 17.8125C99.2261 17.8125 99.8734 17.5322 100.394 16.9717C100.928 16.4245 101.195 15.7305 101.195 14.8896C101.195 14.0488 100.928 13.3548 100.394 12.8076Z"
+                              fill="white"/>
+                        <path d="M108.937 10.145C110.099 10.145 111.093 10.5387 111.92 11.3262V10.3853H113.722V19.394H111.92V18.4531C111.093 19.2406 110.099 19.6343 108.937 19.6343C107.696 19.6343 106.642 19.1805 105.774 18.273C104.934 17.3787 104.513 16.251 104.513 14.8896C104.513 13.5417 104.934 12.4139 105.774 11.5063C106.642 10.5988 107.696 10.145 108.937 10.145ZM111.08 12.8076C110.559 12.2471 109.912 11.9668 109.138 11.9668C108.377 11.9668 107.723 12.2471 107.176 12.8076C106.655 13.3682 106.395 14.0622 106.395 14.8896C106.395 15.7171 106.655 16.4111 107.176 16.9717C107.723 17.5322 108.377 17.8125 109.138 17.8125C109.912 17.8125 110.559 17.5322 111.08 16.9717C111.613 16.4245 111.88 15.7305 111.88 14.8896C111.88 14.0488 111.613 13.3548 111.08 12.8076Z"
+                              fill="white"/>
+                        <path d="M115.619 12.6475C115.619 10.5921 116.04 9.02393 116.88 7.94287C117.735 6.86182 119.016 6.20785 120.724 5.98096C122.286 5.76742 123.213 5.35368 123.507 4.73975L124.348 5.80078C124.201 6.2679 123.814 6.67497 123.187 7.02197C122.559 7.36898 121.879 7.60921 121.145 7.74268C119.89 7.91618 118.962 8.36996 118.362 9.104C117.775 9.82471 117.468 10.839 117.441 12.147C117.761 11.533 118.208 11.0459 118.782 10.6855C119.369 10.3252 120.037 10.145 120.784 10.145C122.079 10.145 123.166 10.6055 124.047 11.5264C124.942 12.4339 125.389 13.5617 125.389 14.9097C125.389 16.271 124.942 17.3988 124.047 18.293C123.166 19.1872 122.059 19.6343 120.724 19.6343C119.256 19.6343 118.035 19.047 117.061 17.8726C116.1 16.6981 115.619 14.9564 115.619 12.6475ZM118.762 12.8076C118.242 13.3682 117.981 14.0622 117.981 14.8896C117.981 15.7171 118.242 16.4111 118.762 16.9717C119.296 17.5322 119.957 17.8125 120.744 17.8125C121.532 17.8125 122.186 17.5322 122.706 16.9717C123.24 16.4245 123.507 15.7305 123.507 14.8896C123.507 14.0488 123.24 13.3548 122.706 12.8076C122.186 12.2471 121.532 11.9668 120.744 11.9668C119.957 11.9668 119.296 12.2471 118.762 12.8076Z"
+                              fill="white"/>
+                        <path d="M128.181 18.273C127.287 17.3787 126.84 16.251 126.84 14.8896C126.84 13.5283 127.287 12.4006 128.181 11.5063C129.088 10.5988 130.216 10.145 131.564 10.145C132.912 10.145 134.04 10.5988 134.948 11.5063C135.855 12.4139 136.309 13.5417 136.309 14.8896C136.309 16.2376 135.855 17.3654 134.948 18.273C134.04 19.1805 132.912 19.6343 131.564 19.6343C130.216 19.6343 129.088 19.1805 128.181 18.273ZM129.522 12.8076C128.988 13.3548 128.721 14.0488 128.721 14.8896C128.721 15.7305 128.988 16.4245 129.522 16.9717C130.056 17.5322 130.737 17.8125 131.564 17.8125C132.365 17.8125 133.039 17.5322 133.586 16.9717C134.133 16.3978 134.407 15.7038 134.407 14.8896C134.407 14.0755 134.133 13.3815 133.586 12.8076C133.039 12.2471 132.365 11.9668 131.564 11.9668C130.737 11.9668 130.056 12.2471 129.522 12.8076Z"
+                              fill="white"/>
+                        <path d="M140.178 19.394V12.127H137.015V10.3853H145.162V12.127H141.999V19.394H140.178Z"
+                              fill="white"/>
+                        <path d="M150.247 10.145C151.408 10.145 152.403 10.5387 153.23 11.3262V10.3853H155.032V19.394H153.23V18.4531C152.403 19.2406 151.408 19.6343 150.247 19.6343C149.006 19.6343 147.952 19.1805 147.084 18.273C146.243 17.3787 145.823 16.251 145.823 14.8896C145.823 13.5417 146.243 12.4139 147.084 11.5063C147.952 10.5988 149.006 10.145 150.247 10.145ZM152.389 12.8076C151.869 12.2471 151.222 11.9668 150.447 11.9668C149.687 11.9668 149.033 12.2471 148.486 12.8076C147.965 13.3682 147.705 14.0622 147.705 14.8896C147.705 15.7171 147.965 16.4111 148.486 16.9717C149.033 17.5322 149.687 17.8125 150.447 17.8125C151.222 17.8125 151.869 17.5322 152.389 16.9717C152.923 16.4245 153.19 15.7305 153.19 14.8896C153.19 14.0488 152.923 13.3548 152.389 12.8076Z"
+                              fill="white"/>
+                        <path d="M159.071 15.6704V19.394H157.269V10.3853H159.071V13.9487H163.836V10.3853H165.657V19.394H163.836V15.6704H159.071Z"
+                              fill="white"/>
+                        <path d="M168.846 18.273C167.951 17.3787 167.504 16.251 167.504 14.8896C167.504 13.5283 167.951 12.4006 168.846 11.5063C169.753 10.5988 170.881 10.145 172.229 10.145C173.577 10.145 174.705 10.5988 175.612 11.5063C176.52 12.4139 176.974 13.5417 176.974 14.8896C176.974 16.2376 176.52 17.3654 175.612 18.273C174.705 19.1805 173.577 19.6343 172.229 19.6343C170.881 19.6343 169.753 19.1805 168.846 18.273ZM170.187 12.8076C169.653 13.3548 169.386 14.0488 169.386 14.8896C169.386 15.7305 169.653 16.4245 170.187 16.9717C170.721 17.5322 171.401 17.8125 172.229 17.8125C173.03 17.8125 173.704 17.5322 174.251 16.9717C174.798 16.3978 175.072 15.7038 175.072 14.8896C175.072 14.0755 174.798 13.3815 174.251 12.8076C173.704 12.2471 173.03 11.9668 172.229 11.9668C171.401 11.9668 170.721 12.2471 170.187 12.8076Z"
+                              fill="white"/>
+                        <path d="M61.6049 32.667C61.6049 30.665 62.2722 28.9967 63.6068 27.6621C64.9414 26.3275 66.6031 25.6602 68.5917 25.6602C69.9397 25.6602 71.1608 25.9805 72.2552 26.6211C73.3497 27.2617 74.1838 28.1426 74.7577 29.2637L72.8358 30.0044C72.3954 29.2437 71.8015 28.6497 71.0541 28.2227C70.32 27.7956 69.4992 27.582 68.5917 27.582C67.177 27.582 66.0025 28.0692 65.0682 29.0435C64.134 29.991 63.6669 31.1989 63.6669 32.667C63.6669 34.1084 64.134 35.3162 65.0682 36.2905C66.0158 37.2515 67.1903 37.7319 68.5917 37.7319C69.4992 37.7319 70.32 37.5184 71.0541 37.0913C71.8015 36.6642 72.3954 36.0703 72.8358 35.3096L74.7577 36.0503C74.1838 37.1714 73.3497 38.0522 72.2552 38.6929C71.1608 39.3335 69.9397 39.6538 68.5917 39.6538C66.6031 39.6538 64.9414 38.9865 63.6068 37.6519C62.2722 36.3172 61.6049 34.6556 61.6049 32.667Z"
+                              fill="white"/>
+                        <path d="M78.6723 39.4136V32.1465H75.5092V30.4048H83.6572V32.1465H80.4941V39.4136H78.6723Z"
+                              fill="white"/>
+                        <path d="M87.1329 40.4746L87.6534 39.1733L84.13 30.4048H86.0118L88.5743 36.9312L91.1969 30.4048H93.0787L88.6944 41.0952C88.294 42.0695 87.7935 42.7835 87.1929 43.2373C86.5924 43.6911 85.845 43.918 84.9508 43.918H84.6304V42.1763H84.9508C85.9517 42.1763 86.6791 41.6091 87.1329 40.4746Z"
+                              fill="white"/>
+                        <path d="M94.6935 39.4136V42.1763H92.8718V37.6719H94.2531C94.7069 37.2048 94.9338 36.2038 94.9338 34.6689V30.4048H102.221V37.6719H103.862V42.1763H102.041V39.4136H94.6935ZM96.195 37.6719H100.419V32.1465H96.7355V34.769C96.7355 35.9435 96.5554 36.9111 96.195 37.6719Z"
+                              fill="white"/>
+                        <path d="M111.91 33.4678L106.826 39.4136H105.324V30.4048H107.126V36.4106L112.211 30.4048H113.732V39.4136H111.91V33.4678Z"
+                              fill="white"/>
+                        <path d="M124.868 35.5698H117.421C117.568 36.2638 117.908 36.8377 118.442 37.2915C118.989 37.7319 119.636 37.9521 120.384 37.9521C121.385 37.9521 122.179 37.5785 122.766 36.8311L124.528 37.3716C124.127 38.0656 123.554 38.6195 122.806 39.0332C122.072 39.4469 121.265 39.6538 120.384 39.6538C119.022 39.6538 117.875 39.2 116.94 38.2925C116.02 37.3849 115.559 36.2572 115.559 34.9092C115.559 33.5479 116.006 32.4201 116.9 31.5259C117.808 30.6183 118.922 30.1646 120.244 30.1646C121.552 30.1646 122.659 30.6183 123.567 31.5259C124.461 32.4201 124.908 33.5479 124.908 34.9092C124.908 35.1628 124.895 35.383 124.868 35.5698ZM117.441 34.1284H123.046C122.886 33.4478 122.546 32.9006 122.025 32.4868C121.505 32.0731 120.898 31.8662 120.204 31.8662C119.536 31.8662 118.942 32.0798 118.422 32.5068C117.915 32.9206 117.588 33.4611 117.441 34.1284Z"
+                              fill="white"/>
+                        <path d="M126.614 39.4136V30.4048H128.416V36.4106L133.501 30.4048H135.023V39.4136H133.201V33.4678L128.116 39.4136H126.614ZM127.735 25.8203H129.317C129.317 26.234 129.457 26.5811 129.737 26.8613C130.031 27.1283 130.391 27.2617 130.818 27.2617C131.246 27.2617 131.599 27.1283 131.88 26.8613C132.16 26.5811 132.3 26.234 132.3 25.8203H133.881C133.881 26.6344 133.588 27.3351 133.001 27.9224C132.427 28.4963 131.699 28.7832 130.818 28.7832C129.924 28.7832 129.19 28.4963 128.616 27.9224C128.029 27.3351 127.735 26.6344 127.735 25.8203Z"
+                              fill="white"/>
+                        <path d="M142.172 32.667C142.172 30.665 142.839 28.9967 144.174 27.6621C145.508 26.3275 147.17 25.6602 149.159 25.6602C150.507 25.6602 151.728 25.9805 152.822 26.6211C153.917 27.2617 154.751 28.1426 155.325 29.2637L153.403 30.0044C152.962 29.2437 152.368 28.6497 151.621 28.2227C150.887 27.7956 150.066 27.582 149.159 27.582C147.744 27.582 146.569 28.0692 145.635 29.0435C144.701 29.991 144.234 31.1989 144.234 32.667C144.234 34.1084 144.701 35.3162 145.635 36.2905C146.583 37.2515 147.757 37.7319 149.159 37.7319C150.066 37.7319 150.887 37.5184 151.621 37.0913C152.368 36.6642 152.962 36.0703 153.403 35.3096L155.325 36.0503C154.751 37.1714 153.917 38.0522 152.822 38.6929C151.728 39.3335 150.507 39.6538 149.159 39.6538C147.17 39.6538 145.508 38.9865 144.174 37.6519C142.839 36.3172 142.172 34.6556 142.172 32.667Z"
+                              fill="white"/>
+                        <path d="M161.117 30.1646C162.278 30.1646 163.273 30.5583 164.1 31.3457V30.4048H165.902V39.4136H164.1V38.4727C163.273 39.2601 162.278 39.6538 161.117 39.6538C159.876 39.6538 158.822 39.2 157.954 38.2925C157.113 37.3983 156.693 36.2705 156.693 34.9092C156.693 33.5612 157.113 32.4334 157.954 31.5259C158.822 30.6183 159.876 30.1646 161.117 30.1646ZM163.259 32.8271C162.739 32.2666 162.092 31.9863 161.317 31.9863C160.557 31.9863 159.903 32.2666 159.356 32.8271C158.835 33.3877 158.575 34.0817 158.575 34.9092C158.575 35.7367 158.835 36.4307 159.356 36.9912C159.903 37.5518 160.557 37.832 161.317 37.832C162.092 37.832 162.739 37.5518 163.259 36.9912C163.793 36.444 164.06 35.75 164.06 34.9092C164.06 34.0684 163.793 33.3743 163.259 32.8271Z"
+                              fill="white"/>
+                        <path d="M168.139 39.4136V30.4048H169.941V36.4106L175.026 30.4048H176.547V39.4136H174.726V33.4678L169.641 39.4136H168.139ZM169.26 25.8203H170.842C170.842 26.234 170.982 26.5811 171.262 26.8613C171.556 27.1283 171.916 27.2617 172.343 27.2617C172.77 27.2617 173.124 27.1283 173.404 26.8613C173.685 26.5811 173.825 26.234 173.825 25.8203H175.406C175.406 26.6344 175.113 27.3351 174.525 27.9224C173.952 28.4963 173.224 28.7832 172.343 28.7832C171.449 28.7832 170.715 28.4963 170.141 27.9224C169.554 27.3351 169.26 26.6344 169.26 25.8203Z"
+                              fill="white"/>
+                        <path d="M181.077 39.4136V32.1465H177.914V30.4048H186.062V32.1465H182.899V39.4136H181.077Z"
+                              fill="white"/>
+                        <path d="M188.064 38.2925C187.169 37.3983 186.722 36.2705 186.722 34.9092C186.722 33.5479 187.169 32.4201 188.064 31.5259C188.971 30.6183 190.099 30.1646 191.447 30.1646C192.795 30.1646 193.923 30.6183 194.83 31.5259C195.738 32.4334 196.191 33.5612 196.191 34.9092C196.191 36.2572 195.738 37.3849 194.83 38.2925C193.923 39.2 192.795 39.6538 191.447 39.6538C190.099 39.6538 188.971 39.2 188.064 38.2925ZM189.405 32.8271C188.871 33.3743 188.604 34.0684 188.604 34.9092C188.604 35.75 188.871 36.444 189.405 36.9912C189.939 37.5518 190.619 37.832 191.447 37.832C192.248 37.832 192.922 37.5518 193.469 36.9912C194.016 36.4173 194.29 35.7233 194.29 34.9092C194.29 34.0951 194.016 33.401 193.469 32.8271C192.922 32.2666 192.248 31.9863 191.447 31.9863C190.619 31.9863 189.939 32.2666 189.405 32.8271Z"
+                              fill="white"/>
+                        <path d="M198.012 30.4048H202.757C203.491 30.4048 204.125 30.6117 204.659 31.0254C205.206 31.4391 205.513 31.9797 205.58 32.647C205.58 33.4744 205.299 34.1351 204.739 34.6289C205.58 35.1094 206 35.8034 206 36.7109C206 37.4984 205.726 38.1457 205.179 38.6528C204.632 39.16 203.938 39.4136 203.097 39.4136H198.012V30.4048ZM199.814 35.5098V37.6719H203.097C203.391 37.6719 203.631 37.5718 203.818 37.3716C204.018 37.158 204.118 36.8978 204.118 36.5908C204.118 36.2839 204.018 36.0303 203.818 35.8301C203.631 35.6165 203.391 35.5098 203.097 35.5098H199.814ZM202.757 32.1465H199.814V33.9883H202.757C203.024 33.9883 203.244 33.9015 203.417 33.728C203.604 33.5545 203.698 33.3343 203.698 33.0674C203.698 32.8005 203.604 32.5802 203.417 32.4067C203.244 32.2332 203.024 32.1465 202.757 32.1465Z"
+                              fill="white"/>
+                    </g>
+                </svg>
+            </a>
+            <a href="#" class="item-s">
+                <span>YouTube</span>
+                <div class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.9498 7.05026L7.0503 16.9498M16.9498 7.05026H8.46451M16.9498 7.05026V15.5355"
+                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </a>
+            <a href="#" class="item-s">
+                <span>VK</span>
+                <div class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.9498 7.05026L7.0503 16.9498M16.9498 7.05026H8.46451M16.9498 7.05026V15.5355"
+                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
+    <svg width="1880" height="160" viewBox="0 0 1880 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M174.413 49.8257C162.574 49.8257 150.523 50.8769 138.262 52.9792C126.423 55.0816 115.641 58.8658 105.916 64.3319C96.1912 69.3776 88.1577 76.5256 81.8154 85.7759C75.8959 94.6058 72.9362 105.959 72.9362 119.834C72.9362 136.653 77.3758 150.318 86.255 160.83C95.1342 170.921 105.916 178.7 118.601 184.166C128.748 188.371 139.53 191.945 150.946 194.888C162.362 197.831 173.99 200.564 185.829 203.087C198.091 205.61 209.929 208.133 221.346 210.656C233.184 213.178 244.601 216.332 255.594 220.116C281.386 228.946 301.892 241.56 317.114 257.958C332.758 274.357 340.58 296.011 340.58 322.921C340.58 348.149 336.141 368.963 327.262 385.361C318.805 401.759 307.178 415.214 292.379 425.726C278.003 436.238 261.09 444.017 241.641 449.062C222.614 453.687 202.319 456 180.755 456C159.191 456 138.473 453.898 118.601 449.693C99.151 445.488 81.3926 438.551 65.3255 428.88C49.2584 419.209 35.5168 406.595 24.1007 391.037C12.6846 375.48 4.651 356.559 0 334.274H57.7147C61.9429 348.57 68.4966 360.343 77.3758 369.593C86.255 378.844 96.4026 386.202 107.819 391.668C119.235 397.134 131.497 400.918 144.604 403.021C158.134 405.123 171.453 406.174 184.56 406.174C197.245 406.174 209.507 404.913 221.346 402.39C233.607 399.447 244.389 395.032 253.691 389.145C262.993 383.259 270.392 375.69 275.889 366.44C281.386 357.189 284.134 346.047 284.134 333.012C284.134 313.25 278.849 298.534 268.278 288.863C257.708 279.192 243.544 271.834 225.785 266.788C213.946 263.004 201.473 259.851 188.366 257.328C175.258 254.805 162.151 252.072 149.044 249.129C135.936 246.185 123.04 242.822 110.356 239.037C97.6711 234.833 86.0436 229.997 75.4731 224.531C58.5604 216.542 44.396 204.349 32.9799 187.95C21.5637 171.131 15.8557 150.108 15.8557 124.88C15.8557 101.333 20.5067 81.5712 29.8087 65.5934C39.1107 49.6155 51.161 36.7911 65.9597 27.1203C80.7584 17.4495 97.2483 10.5117 115.429 6.30705C134.033 2.10235 153.695 0 174.413 0C191.325 0.420465 206.547 1.89212 220.077 4.41496C234.03 6.51731 247.137 10.5118 259.399 16.3984C278.426 24.8078 294.282 37.4219 306.966 54.2407C319.651 71.0595 326.627 92.7137 327.896 119.203H273.986C272.295 106.169 268.278 95.2365 261.936 86.4067C256.017 77.5768 248.617 70.4288 239.738 64.9626C230.859 59.4966 220.711 55.7123 209.295 53.6099C198.302 51.0871 186.674 49.8257 174.413 49.8257Z"
+              fill="white"/>
+        <path d="M511.554 450.954V54.8714H367.585V5.04565H710.702V54.8714H566.732V450.954H511.554Z" fill="white"/>
+        <path d="M1034.49 450.954L998.978 355.087H776.999L741.482 450.954H681.864L848.666 5.04565H927.945L1094.11 450.954H1034.49ZM887.988 52.9792L795.391 305.261H980.586L887.988 52.9792Z"
+              fill="white"/>
+        <path d="M1198.08 283.817V450.954H1142.9V5.04565H1310.97C1335.49 5.04565 1357.69 7.56847 1377.56 12.6141C1397.44 17.6597 1414.35 25.6487 1428.3 36.5809C1442.25 47.5131 1452.82 62.0194 1460.01 80.0996C1467.62 97.7594 1471.43 119.203 1471.43 144.432C1471.43 162.932 1468.68 179.541 1463.18 194.257C1457.69 208.553 1450.29 221.167 1440.99 232.1C1432.11 242.611 1421.54 251.441 1409.27 258.589C1397.01 265.317 1384.33 270.573 1371.22 274.357L1465.09 450.954H1404.83L1315.41 283.817H1198.08ZM1293.21 233.992C1309.7 233.992 1325.13 232.73 1339.51 230.207C1354.31 227.685 1367.2 223.059 1378.2 216.332C1389.19 209.604 1397.86 200.564 1404.2 189.212C1410.97 177.438 1414.56 161.881 1414.98 142.539C1414.98 110.584 1405.47 88.0885 1386.44 75.0539C1367.84 61.5989 1340.78 54.8714 1305.26 54.8714H1198.08V233.992H1293.21Z"
+              fill="white"/>
+        <path d="M1547.66 450.954V5.04565H1602.84V210.656H1668.8L1815.31 5.04565H1878.73L1717.64 226.423L1880 450.954H1814.67L1673.88 260.481H1602.84V450.954H1547.66Z"
+              fill="white"/>
+    </svg>
+
+</footer>
+<script src="src/scripts/app.js" type="module"></script>
+</body>
+</html>

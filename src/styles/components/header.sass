@@ -1,0 +1,132 @@
+header
+  padding: 20px
+  background: $white
+  border-bottom: 1px solid $black_01
+  position: relative
+
+  .header-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 1880px
+    margin: 0 auto
+
+    .logo
+      width: 152px
+      height: auto
+
+      img
+        object-fit: contain
+
+    .btn
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 1000px
+      gap: 10px
+      padding: 6px 10px
+      text-transform: uppercase
+      @include text_16_medium
+
+
+    .btn.recall
+      color: $white
+      background: $blue
+
+
+    .btn.catalog
+      background: $black_005
+
+
+    .btn.compare
+      border: 1px solid $black_005
+      color: $blue
+
+
+    .btn-section
+      display: flex
+      gap: 20px
+
+    nav
+      ul
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 60px
+
+        li a
+          color: $black_04
+          @include text_16_regular
+
+    .contact-section
+      display: flex
+      gap: 20px
+
+      .contacts
+        display: flex
+        height: 100%
+        flex-direction: column
+        justify-content: space-between
+
+        .phone
+          @include text_20_medium
+
+        .email
+          @include text_16_regular
+
+  .catalog-menu
+    display: none
+  .catalog-menu.show
+    padding: 40px 0
+    background: $white
+    width: 100%
+    position: absolute
+    top: calc(100% + 1px)
+    left: 0
+    display: block
+    z-index: 2
+
+    .container
+      display: flex
+      flex-direction: column
+      gap: 22px
+
+      .header
+        display: flex
+        align-items: flex-end
+        gap: 10px
+
+        .title
+          text-transform: uppercase
+          @include heading_54
+
+        .count
+          @include text_16_regular
+          line-height: 1.6
+
+      .body
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 40px 20px
+
+        .categories
+          display: grid
+          grid-template-columns: repeat(4, 1fr)
+          gap: 20px
+
+          .item-c
+            cursor: pointer
+            height: 100%
+            padding: 24px
+            background: $black_005
+            border-radius: 1000px
+            display: flex
+            align-items: center
+            justify-content: center
+            color: $black_04
+            text-transform: uppercase
+            @include text_16_medium
+
+
+
+

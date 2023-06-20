@@ -1,0 +1,220 @@
+// Базовые стили для сайта
+$blue: #024D7F
+$white: #FFFFFF
+$white_04: rgba(255, 255, 255, 0.4)
+$white_01: rgba(255, 255, 255, 0.1)
+$light-blue: #B9E5FA
+$black: #0D0D0D
+$black_005: rgba(13, 13, 13, 0.05)
+$black_05: rgba(13, 13, 13, 0.5)
+$black_04: rgba(13, 13, 13, 0.4)
+$black_02: rgba(13, 13, 13, 0.2)
+$black_01: rgba(13, 13, 13, 0.1)
+
+@mixin background
+  background-size: cover !important
+  background-repeat: no-repeat !important
+
+@mixin heading_64
+  font-size: 64px
+  line-height: 1.1
+  font-weight: 400
+
+@mixin heading_54
+  font-size: 54px
+  line-height: 1
+  font-weight: 400
+
+@mixin text_36_regular
+  font-size: 36px
+  line-height: 1.2
+  font-weight: 400
+
+@mixin text_24_regular
+  font-size: 24px
+  line-height: 1.2
+  font-weight: 400
+
+@mixin text_20_medium
+  font-size: 20px
+  font-weight: 500
+  line-height: 1.2
+
+@mixin text_20_regular
+  font-size: 20px
+  font-weight: 400
+  line-height: 1.2
+
+@mixin text_16_regular
+  font-size: 16px
+  font-weight: 400
+  line-height: 1.2
+
+@mixin text_16_medium
+  font-size: 16px
+  font-weight: 500
+  line-height: 1.2
+
+
+@mixin text_12_regular
+  font-size: 12px
+  font-weight: 400
+  line-height: 1.2
+
+*, *:before, *:after
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  font-family: 'Onest', sans-serif
+  @include text_16_regular
+
+ul, li
+  padding: 0
+  margin: 0
+  list-style: none
+
+p
+  margin: 0
+  padding: 0
+
+a
+  text-decoration: none
+  color: $black
+
+.btn
+  cursor: pointer
+
+.btn.no-br
+  border-radius: 0 !important
+
+.btn.blue
+  background: $blue
+  color: $white
+  border-radius: 1000px
+  padding: 20px
+  text-transform: uppercase
+  width: 100%
+  text-align: center
+
+.btn.white
+  color: $blue
+  background: $white
+  border-radius: 1000px
+  padding: 20px
+  text-transform: uppercase
+  width: 100%
+  text-align: center
+
+
+.custom-input
+  display: flex
+  gap: 20px
+  padding: 24px
+  border: 1px solid $black_01
+
+  input
+    width: 100%
+    border: none
+    outline: none
+    background: transparent
+    color: $black
+
+  input::placeholder
+    color: $black_04
+
+.custom-input.icon
+  padding: 18px
+
+  .icon
+    width: 24px
+    height: 24px
+.custom-input.white
+  border: 1px solid $white_01
+  input
+    color: $white
+  input::placeholder
+    color: $white_04
+section:first-of-type
+  margin: 0
+section
+  margin-top: 80px
+
+.product
+  border: 1px solid $black_01
+  background: $white
+
+  .header
+    padding: 20px 0 0 20px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    border-bottom: 1px solid $black_01
+
+    .info
+      .name
+        @include text_36_regular
+        margin-bottom: 15px
+
+      .count
+        line-height: 1.2
+        margin-bottom: 40px
+
+      .link
+        background: $blue
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        margin-top: 15px
+
+      .link:before
+        content: ''
+        border-radius: 50%
+        width: 150%
+        height: 150%
+        display: block
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        border: 1px solid $black_01
+
+  .body
+    padding: 20px
+    gap: 10px
+  //аккордеон
+  .accordion-button
+    border-radius: 1000px
+    padding: 15px
+    border: 1px solid $black_01
+    background: transparent
+    text-transform: uppercase
+    @include text_16_regular
+    line-height: 0.9
+    display: flex
+    justify-content: space-between
+    position: relative
+
+  .accordion-button::after
+    border: 1px solid $black_01
+    border-radius: 50%
+
+  .accordion-body
+    padding: 10px 20px 20px
+
+    span
+      @include text_12_regular
+      margin-bottom: 20px
+      color: $black_02
+      display: block
+
+    p
+      @include text_16_regular
+      color: $black_04
+      margin-bottom: 10px
+
+    p:last-child
+      margin-bottom: 0

@@ -1,0 +1,103 @@
+footer
+  background: $black
+  padding-top: 160px
+
+  .main-footer
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+
+    form
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      gap: 20px
+
+      span
+        grid-column: 2
+        max-width: 400px
+        margin-left: 20px
+        color: $white
+        font-size: 12px
+        line-height: 1.2
+
+        a
+          color: $light-blue
+          font-size: 12px
+          line-height: 1.2
+
+    nav
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+
+      ul
+        display: flex
+        flex-direction: column
+        gap: 30px
+
+        li a
+          color: $white
+          text-transform: uppercase
+          font-size: 16px
+
+    .form
+      display: flex
+      flex-direction: column
+
+      .title
+        font-size: 64px
+        line-height: 1.1
+        color: $white
+        text-transform: uppercase
+        margin-bottom: 25px
+
+      .description
+        font-size: 14px
+        line-height: 1.2
+        color: $white
+        margin-bottom: 50px
+
+  .second-footer
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-bottom: 80px
+    margin-top: 120px
+
+    .info-block
+      @include text_16_medium
+      color: $white_04
+
+      p:first-of-type
+        margin-bottom: 18px
+
+    .time-work
+      p
+        @include text_12_regular
+        color: $white_04
+        text-transform: uppercase
+
+      .time
+        color: $white
+        font-size: 24px
+        line-height: 1.2
+
+    .address
+      color: $white
+      @include text_16_regular
+
+    .item-s
+      display: flex
+      gap: 10px
+      align-items: center
+      color: $white
+      text-transform: uppercase
+
+    .develop
+      cursor: pointer
+
+      svg g
+        transition: all .3s ease-in-out
+
+    .develop:hover
+      svg g
+        opacity: 1
+

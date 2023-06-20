@@ -1,0 +1,232 @@
+$margin: calc((100vw - 1760px) / 2)
+section
+  .landing-section
+    background: url("/src/images/backgrounds/landing.jpg")
+    padding: 80px 0 80px
+
+    .landing-container
+      margin: 0 0 0 $margin
+
+      .swiper-slide
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+
+      .content
+        display: flex
+        flex-direction: column
+        gap: 40px
+
+        .title
+          display: flex
+          flex-direction: column
+
+          .top
+            display: flex
+            gap: 27px
+            align-items: center
+
+            p
+              font-size: 160px
+              line-height: .9
+              color: $blue
+              text-transform: uppercase
+              font-weight: 500
+
+            .tag
+              padding: 20px 30px
+              background: $white
+              color: $black
+              text-transform: uppercase
+              border-radius: 1000px
+              font-size: 64px
+              line-height: 1.1
+
+          .bottom
+            p
+              text-transform: uppercase
+              color: $blue
+              font-size: 54px
+              line-height: 1
+
+        .btn-container
+          display: flex
+          gap: 50px
+
+          .btn
+            max-width: 395px
+
+          .slider-btn
+            display: flex
+            gap: 20px
+
+            .slider-btn
+              background: $white
+              border-radius: 50%
+              display: flex
+              align-items: center
+              justify-content: center
+              width: 60px
+              height: 60px
+              cursor: pointer
+
+            .slider-btn.prev
+              transform: rotate(180deg)
+
+  .video-section
+    .video-container
+      iframe
+        width: 100%
+        height: 520px
+
+  .catalog-section
+    padding: 80px 0 0
+    background: $black_005
+
+    .catalog-container
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      gap: 20px
+
+      .all-machines
+        grid-column: 4
+        text-align: center
+        background: $light-blue
+        color: $blue
+        text-transform: uppercase
+        @include text_20_medium
+        padding: 23px
+
+      .product
+        grid-column: span 2
+
+      .item-p
+        display: flex
+        flex-direction: column
+        gap: 26px
+        background: $white
+        border: 1px solid $black_01
+
+        .photo
+          height: 258px
+          width: 100%
+
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-bottom: 1px solid $black_01
+
+        .name
+          @include text_20_medium
+          padding: 0 20px
+
+        .description
+          padding: 0 20px
+          @include text_16_regular
+
+        .btn-section
+          display: flex
+          gap: 10px
+          padding: 0 20px 20px
+
+          .play-video
+            padding: 15px
+            background: $light-blue
+            border-radius: 50%
+
+          .compare
+            border-radius: 50%
+            border: 1px solid $blue
+            padding: 15px
+
+  .call-section
+    .call-container
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      gap: 40px
+
+      .text
+        display: flex
+        flex-direction: column
+        gap: 30px
+
+        p
+          font-size: 36px
+          line-height: 1.2
+
+          span
+            color: $blue
+            font-size: 36px
+            line-height: 1.2
+
+        .btn
+          max-width: 395px
+
+        .description
+          @include text_16_regular
+          color: $black_04
+
+      .form
+        padding: 20px
+        background: $light-blue
+        color: $blue
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+        p
+          font-size: 54px
+          line-height: 1
+
+        .description
+          @include text_16_regular
+
+  .blog-section
+    .blog-container
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      gap: 20px
+
+      .btn
+        grid-column: 4
+
+      .item-b:after
+        content: ''
+        position: absolute
+        display: block
+        width: 100%
+        height: 100%
+        background: rgba(0, 0, 0, .5)
+        top: 0
+        left: 0
+
+      .item-b
+        padding: 20px
+        display: flex
+        flex-direction: column
+        gap: 165px
+        @include background
+        position: relative
+
+        .header
+          display: flex
+          justify-content: space-between
+          z-index: 2
+
+          .tag
+            padding: 5px 10px
+            background: $white
+            color: $black
+            text-transform: uppercase
+            border-radius: 1000px
+
+          .date
+            color: $white_04
+
+        a
+          @include text_24_regular
+          color: $white
+          z-index: 2
+
+
+

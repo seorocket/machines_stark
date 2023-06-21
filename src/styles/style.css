@@ -66,7 +66,8 @@ a {
 .custom-input {
   display: flex;
   gap: 20px;
-  padding: 24px;
+  padding: 19px;
+  height: 60px;
   border: 1px solid rgba(13, 13, 13, 0.1);
 }
 .custom-input input {
@@ -220,7 +221,7 @@ header .header-container .btn {
   justify-content: center;
   border-radius: 1000px;
   gap: 10px;
-  padding: 6px 10px;
+  padding: 6px 30px;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
@@ -629,6 +630,9 @@ section .call-section .call-container .form .description {
   font-weight: 400;
   line-height: 1.2;
 }
+section .blog-section {
+  margin-bottom: 80px;
+}
 section .blog-section .blog-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -636,6 +640,9 @@ section .blog-section .blog-container {
 }
 section .blog-section .blog-container .btn {
   grid-column: 4;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 section .blog-section .blog-container .item-b:after {
   content: "";

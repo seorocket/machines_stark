@@ -1,0 +1,16 @@
+.breadcrumbs-section
+    margin-top: 80px
+    margin-bottom: 50px
+    .breadcrumbs-container
+        display: flex
+        gap: 10px
+        a
+            text-transform: uppercase
+            @include text_16_medium
+            color: $black_04
+
+        a:after
+            content: '/'
+            margin-left: 10px
+        a:last-of-type:after
+            content: ''

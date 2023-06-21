@@ -135,6 +135,14 @@ section {
   margin-top: 80px;
 }
 
+h1.title {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
 .product {
   border: 1px solid rgba(13, 13, 13, 0.1);
   background: #FFFFFF;
@@ -885,10 +893,274 @@ section .product-section .product-container .info-block .body .tabs .item-t span
   font-weight: 500;
   line-height: 1.2;
 }
-.catalog-page-section .catalog-page-container .catalog-container {
+.catalog-page-section .catalog-page-container .products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.catalog-page-section .catalog-page-container .products .categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.catalog-page-section .catalog-page-container .products .categories .item-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 23px;
+  background: rgba(13, 13, 13, 0.1);
+  cursor: pointer;
+}
+.catalog-page-section .catalog-page-container .products .categories .item-c span {
+  color: rgba(13, 13, 13, 0.4);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.catalog-page-section .catalog-page-container .products .categories .item-c.active {
+  background: #024D7F;
+}
+.catalog-page-section .catalog-page-container .products .categories .item-c.active span {
+  color: #FFFFFF;
+}
+.catalog-page-section .catalog-page-container .products .catalog-container {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.comparison-section .comparison-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.comparison-section .comparison-container .comparison-block {
+  display: flex;
+  flex-direction: column;
+}
+.comparison-section .comparison-container .comparison-block .header {
+  border-bottom: 1px solid rgba(13, 13, 13, 0.1);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+}
+.comparison-section .comparison-container .comparison-block .header .clear-btn {
+  grid-column: 8;
+  text-align: end;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #024D7F;
+}
+.comparison-section .comparison-container .comparison-block .header .item-t {
+  padding-bottom: 18px;
+  cursor: pointer;
+}
+.comparison-section .comparison-container .comparison-block .header .item-t span {
+  color: rgba(13, 13, 13, 0.4);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  position: relative;
+}
+.comparison-section .comparison-container .comparison-block .header .item-t span.count {
+  font-size: 16px;
+  line-height: 1.2;
+  position: absolute;
+  top: -10px;
+  left: 105%;
+}
+.comparison-section .comparison-container .comparison-block .header .item-t.active {
+  border-bottom: 2px solid #024D7F;
+}
+.comparison-section .comparison-container .comparison-block .header .item-t.active span {
+  color: #0D0D0D;
+}
+.comparison-section .comparison-container .comparison-block .body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 40px;
+}
+.comparison-section .comparison-container .comparison-block .body .item-c {
+  padding-bottom: 49px;
+  border-bottom: 1px solid rgba(13, 13, 13, 0.1);
+}
+.comparison-section .comparison-container .comparison-block .body .item-c .title {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 43px;
+}
+.comparison-section .comparison-container .comparison-block .body .item-c .values {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 50px;
+}
+.comparison-section .comparison-container .comparison-block .body .item-c .values .characteristic {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+}
+.comparison-section .comparison-container .comparison-block .body .item-c .values .characteristic .title {
+  margin-bottom: 0;
+}
+.comparison-section .comparison-container .comparison-block .body .item-c .values .characteristic .name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgba(13, 13, 13, 0.4);
+}
+.comparison-section .comparison-container .comparison-block .body .item-c .values .characteristic .value {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.comparison-section .comparison-container .comparison-block .body .item-c.main .values {
+  gap: 0;
+}
+.comparison-section .comparison-container .comparison-block .body .item-c.main .values .name:nth-last-child(-n+2) {
+  padding-top: 20px;
+}
+.comparison-section .comparison-container .comparison-block .body .item-c.main .values .img {
+  border: 1px solid rgba(13, 13, 13, 0.1);
+}
+.comparison-section .comparison-container .comparison-block .body .item-c.main .values .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: container;
+}
+.comparison-section .comparison-container .comparison-block .body .item-c.main .values .name-machine {
+  padding: 20px;
+  border-left: 1px solid rgba(13, 13, 13, 0.1);
+  border-right: 1px solid rgba(13, 13, 13, 0.1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.comparison-section .comparison-container .comparison-block .body .item-c.main .values .description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 20px;
+  border-left: 1px solid rgba(13, 13, 13, 0.1);
+  border-right: 1px solid rgba(13, 13, 13, 0.1);
+  border-bottom: 1px solid rgba(13, 13, 13, 0.1);
+}
+
+.snap-in-section .snap-in-container.stock .content .item-s img {
+  height: 259px;
+}
+.snap-in-section .snap-in-container .description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 69px;
+  margin-top: 35px;
+}
+.snap-in-section .snap-in-container > .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 20px;
+}
+.snap-in-section .snap-in-container > .content .item-s {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.snap-in-section .snap-in-container > .content .item-s img {
+  height: 340px;
+  width: 100%;
+  object-fit: cover;
+}
+.snap-in-section .snap-in-container > .content .item-s .title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.snap-in-section .snap-in-container > .content .item-s .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.about-section .about-container .title {
+  margin-bottom: 95px;
+}
+.about-section .about-container .content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.about-section .about-container .content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1246px;
+}
+.about-section .about-container .content .text .big-text {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.about-section .about-container .content .text .big-text span {
+  color: #024D7F;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.about-section .about-container .content .text .small-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about-section .about-container .content .text .small-text-container .small-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgba(13, 13, 13, 0.4);
+}
+.about-section .about-container .content iframe {
+  height: 520px;
+  width: 100%;
+}
+
+.we-us-section .we-us-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid rgba(13, 13, 13, 0.1);
+}
+.we-us-section .we-us-container .item-w {
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+}
+.we-us-section .we-us-container .item-w .number {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: rgba(13, 13, 13, 0.1);
+}
+.we-us-section .we-us-container .item-w p {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #024D7F;
+}
+.we-us-section .we-us-container .item-w:nth-of-type(2) {
+  flex-direction: column-reverse;
+  border-right: 1px solid rgba(13, 13, 13, 0.1);
+  border-left: 1px solid rgba(13, 13, 13, 0.1);
 }
 
 .catalog-container .item-p {

@@ -11,6 +11,8 @@ $black_04: rgba(13, 13, 13, 0.4)
 $black_02: rgba(13, 13, 13, 0.2)
 $black_01: rgba(13, 13, 13, 0.1)
 
+$border_black_01: 1px solid $black_01
+
 @mixin background
   background-size: cover !important
   background-repeat: no-repeat !important
@@ -61,6 +63,12 @@ $black_01: rgba(13, 13, 13, 0.1)
   font-weight: 400
   line-height: 1.2
 
+@mixin grid_column($columns, $gap)
+  display: grid
+  grid-template-columns: repeat($columns, 1fr)
+  gap: $gap
+
+
 *, *:before, *:after
   box-sizing: border-box
   margin: 0
@@ -83,7 +91,16 @@ a
 
 .btn
   cursor: pointer
-
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+.page-img
+  width: 100%
+  max-height: 520px
+  margin-bottom: 60px
+  img
+    height: 100%
+    width: 100%
+    object-fit: cover
 .btn.no-br
   border-radius: 0 !important
 
@@ -125,11 +142,11 @@ a
 .btn.gray.outline
   border: 1px solid $black_01
   color: $black_04
-  
+
 .btn.white.outline
   border: 1px solid $white
   color: $white
-  
+
 .custom-input
   display: flex
   gap: 20px
@@ -153,20 +170,27 @@ a
   .icon
     width: 24px
     height: 24px
+
 .custom-input.white
   border: 1px solid $white_01
+
   input
     color: $white
+
   input::placeholder
     color: $white_04
+
 section:first-of-type
   margin: 0
+
 section
   margin-top: 80px
-h1.title  
-    text-transform: uppercase
-    margin-bottom: 0
-    @include heading_64
+
+h1.title
+  text-transform: uppercase
+  margin-bottom: 0
+  @include heading_64
+
 .product
   border: 1px solid $black_01
   background: $white

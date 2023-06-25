@@ -1,0 +1,320 @@
+@mixin no_container
+  //width: 100vw
+  transform: translateX(calc(((100vw - var(--container)) / 2) * -1))
+// Базовые стили для сайта
+$blue: #024D7F
+$white: #FFFFFF
+$white_04: rgba(255, 255, 255, 0.4)
+$white_01: rgba(255, 255, 255, 0.1)
+$light-blue: #B9E5FA
+$black: #0D0D0D
+$black_005: rgba(13, 13, 13, 0.05)
+$black_05: rgba(13, 13, 13, 0.5)
+$black_04: rgba(13, 13, 13, 0.4)
+$black_02: rgba(13, 13, 13, 0.2)
+$black_01: rgba(13, 13, 13, 0.1)
+
+$border_black_01: 1px solid $black_01
+
+@media screen and (max-width: 1919px)
+  .snap-in-section .snap-in-container.sertify .content
+    grid-template-columns: repeat(2, 1fr) !important
+  .lising-section .lising-container .content .item-l.big:nth-of-type(2) .step
+    order: 0 !important
+  .lising-section .lising-container .content .item-l.big:nth-of-type(3)
+    grid-column: span 4
+    background: none !important
+  .lising-section .lising-container .content
+    grid-template-columns: repeat(4, 1fr) !important
+  section .call-section .call-container
+    grid-template-columns: 1fr !important
+  .catalog-page-section .catalog-page-container .products .catalog-container
+    grid-template-columns: repeat(2, 1fr) !important
+  .staff-section .staff-container .content
+    gap: 40px !important
+  section .product-section .product-container .info-block .header
+    justify-content: space-between
+  .staff-section .staff-container .content
+    grid-column: auto !important
+  .staff-section .staff-container
+    grid-template-columns: 1fr !important
+  section .product-section .product-container
+    gap: 40px !important
+    grid-template-columns: 1fr !important
+  section .landing-section .landing-container
+    margin: 0 0 0 calc((100vw - 1200px) / 2) !important
+  header
+    .header-container
+      max-width: 1400px !important
+  header .header-container nav ul
+    gap: 20px !important
+  header .header-container .btn.compare
+    display: none !important
+  section .catalog-section .catalog-container
+    grid-template-columns: repeat(2, 1fr) !important
+    gap: 20px !important
+  .product
+    grid-column: auto !important
+
+    .header
+      flex-direction: column-reverse !important
+      gap: 20px
+  section .catalog-section .catalog-container .all-machines
+    grid-column: span 2 !important
+
+@media screen and (max-width: 1400px)
+  .about-section .about-container .content iframe
+    height: 260px !important
+    margin-left: calc(((100vw - var(--container)) / 2) * -1)
+    width: 100vw !important
+  .we-us-section .we-us-container .item-w
+    padding: 20px !important
+  .we-us-section .we-us-container .item-w p
+    font-size: 20px !important
+  .we-us-section .we-us-container .item-w .number
+    font-size: 24px !important
+  .we-us-section .we-us-container .item-w:nth-of-type(2)
+    flex-direction: column !important
+  .we-us-section .we-us-container .item-w:nth-of-type(2)
+    border-top: $border_black_01
+    border-bottom: $border_black_01
+    border-left: none !important
+    border-right: none !important
+  .we-us-section .we-us-container .item-w
+    height: 220px !important
+  .we-us-section .we-us-container
+    grid-template-columns: 1fr !important
+  .catalog-page-section .catalog-page-container .products .catalog-container
+    grid-template-columns: 1fr !important
+  .catalog-page-section .catalog-page-container .products .categories
+    grid-template-columns: repeat(2, 1fr) !important
+  .catalog-page-section .catalog-page-container .filter .header .title
+    font-size: 54px !important
+  .catalog-page-section .catalog-page-container
+    grid-template-columns: 1fr !important
+  .catalog-page-section .catalog-page-container
+    grid-template-columns: 350px 1fr !important
+    gap: 20px !important
+  header .header-container
+    max-width: 1200px !important
+  section .landing-section .landing-container
+    margin: 0 0 0 calc((100vw - 1000px) / 2) !important
+  section .blog-section .blog-container
+    grid-template-columns: repeat(2, 1fr) !important
+
+  section .blog-section .blog-container .btn
+    grid-column: span 2 !important
+  footer .main-footer
+    grid-template-columns: 1fr !important
+    gap: 40px
+  footer .main-footer nav
+    order: 1 !important
+
+  footer
+    padding-top: 80px !important
+
+@media screen and (max-width: 1200px)
+  .snap-in-section .snap-in-container.reviews .content .btn
+    grid-column: 2 !important
+  .snap-in-section .snap-in-container.reviews .content
+    grid-template-columns: repeat(2, 1fr) !important
+  .lising-section .lising-container .content .item-l.big:nth-of-type(3)
+    grid-column: span 2 !important
+  .lising-section .lising-container .content
+    grid-template-columns: repeat(2, 1fr) !important
+
+  .snap-in-section .snap-in-container > .content
+    grid-template-columns: repeat(2, 1fr) !important
+
+  header .header-container .btn-section,
+  header .header-container nav,
+  header .header-container .contact-section
+    display: none !important
+
+
+@media screen and (max-width: 990px)
+  \:root
+    --container: 720px
+
+  .catalog-page-section .catalog-page-container
+    gap: 40px !important
+    grid-template-columns: 1fr !important
+  section
+    margin-top: 60px !important
+  section .catalog-section
+    padding: 80px 0 0 !important
+  .video-section
+    .container
+      max-width: none !important
+
+  section .call-section .call-container
+    grid-template-columns: 1fr !important
+  section .call-section .call-container .form
+    @include no_container
+
+  footer .second-footer
+    .time-work,
+    .address
+      display: none !important
+
+@media screen and (max-width: 768px)
+  \:root
+    --container: 540px
+  .snap-in-section .snap-in-container.reviews .content .item-r .body
+    padding: 20px !important
+  .snap-in-section .snap-in-container.reviews .content .item-r .body p
+    font-size: 12px !important
+  .snap-in-section .snap-in-container.reviews .content .item-r .header .name
+    font-size: 20px !important
+  .snap-in-section .snap-in-container.reviews .content .btn
+    grid-column: 1 !important
+  .snap-in-section .snap-in-container.reviews .content
+    grid-template-columns: 1fr !important
+
+  .snap-in-section .snap-in-container.sertify .more-text p, .snap-in-section .snap-in-container.sertify .more-text a
+    font-size: 24px !important
+
+  .snap-in-section .snap-in-container.sertify .content
+    margin-bottom: 40px !important
+    grid-template-columns: 1fr !important
+  .snap-in-section .snap-in-container.sertify .content .item-s
+    background-repeat: no-repeat
+    background-size: cover
+    padding: 0 !important
+    width: 100vw
+    margin-left: calc(((100vw - var(--container)) / 2) * -1)
+    padding: 0 calc((100vw - var(--container)) / 2) !important
+  .snap-in-section .snap-in-container.sertify .content .item-s:nth-of-type(3),
+  .snap-in-section .snap-in-container.sertify .content .item-s:nth-of-type(4)
+    display: none !important
+  .lising-section .lising-container .content .item-l img
+    max-height: 50px !important
+  .lising-section .lising-container .content
+    grid-template-columns: 1fr !important
+  .lising-section .lising-container .content .item-l.big,
+  .lising-section .lising-container .content .item-l.big:nth-of-type(3)
+    grid-column: auto !important
+
+  .lising-section .lising-container .content .item-l.big
+    padding: 20px !important
+  .lising-section .lising-container .content .item-l.big .text .description
+    font-size: 14px !important
+  .lising-section .lising-container .content .item-l.big .text .title
+    font-size: 24px !important
+  .lising-section .lising-container .content .item-l.big
+    gap: 80px !important
+
+  .lising-section .lising-container .content .item-l.big .step
+    font-size: 20px !important
+  section .call-section .call-container .text.grid .item-t
+    gap: 20px !important
+  section .call-section .call-container .text.grid .item-t .title
+    font-size: 30px !important
+  section .call-section .call-container .text.grid
+    grid-template-columns: 1fr !important
+    gap: 40px !important
+  // TODO посмотреть что не так с no-container
+  .page-img
+    max-height: 260px !important
+    width: 100vw !important
+    margin-left: calc(((100vw - var(--container)) / 2) * -1)
+  .about-section .about-container .content
+    gap: 40px !important
+
+  .about-section .about-container .content .text .small-text-container .small-text
+    font-size: 14px !important
+  .about-section .about-container .content .text
+    gap: 30px !important
+  .about-section .about-container .content .text .big-text,
+  .about-section .about-container .content .text .big-text span
+    font-size: 20px !important
+
+  .about-section .about-container .title
+    margin-bottom: 35px !important
+  .container
+    > .title
+      font-size: 35px !important
+
+    > .description
+      margin: 30px 0 !important
+  .snap-in-section .snap-in-container > .content .item-s
+    img
+      width: 100vw !important
+      margin-left: calc(((100vw - var(--container)) / 2) * -1)
+
+    .title,
+    .content
+      max-width: var(--container)
+  .snap-in-section .snap-in-container > .content
+    grid-template-columns: 1fr !important
+  .catalog-page-section .catalog-page-container .products .categories .item-c
+    padding: 15px !important
+  .catalog-page-section .catalog-page-container .products .categories .item-c span
+    font-size: 16px !important
+  .catalog-page-section .catalog-page-container .products .btn.filter-btn
+    display: block !important
+  .breadcrumbs-section .breadcrumbs-container a
+    font-size: 12px !important
+  .catalog-page-section .catalog-page-container .filter .body .btn-section .btn.outline
+    font-size: 14px !important
+  .catalog-page-section .catalog-page-container .filter
+    display: none !important
+    position: fixed
+    background: $white
+    width: 100%
+    top: 0
+    left: 0
+    padding: 40px
+  section .product-section .product-container .media-block .elements
+    grid-template-columns: 158px 1fr !important
+  .staff-section .staff-container .content .item-c .content-container .img
+    height: 360px
+  .staff-section .staff-container .content .item-c .content-container
+    grid-template-columns: 1fr !important
+  section .product-section .product-container .info-block .body .navigation
+    overflow: scroll
+  footer .main-footer nav .item-f .title
+    display: block !important
+  section .catalog-section .catalog-container .all-machines
+    grid-column: auto !important
+  section .catalog-section .catalog-container
+    grid-template-columns: 1fr !important
+  section .product-section .product-container .info-block .header
+    .name
+      font-size: 20px !important
+
+    .elements
+      display: none !important
+  section .product-section .product-container .info-block
+    gap: 40px !important
+
+  section .product-section .product-container .info-block .body
+    gap: 20px
+
+  section .product-section .product-container .info-block .body .navigation .item-n
+    font-size: 30px !important
+
+@media screen and (max-width: 575px)
+  \:root
+    --container: 335px
+
+@media screen and (max-width: 425px)
+  .staff-section .staff-container .content .item-c .title
+    font-size: 30px !important
+
+  section .product-section .product-container .info-block .body .tabs .item-t span
+    font-size: 20px !important
+  section .product-section .product-container .info-block .body .tabs .item-t .content
+    padding: 20px
+    margin-bottom: 40px
+    background: $black_005
+  section .product-section .product-container .info-block .body .tabs .item-t,
+  section .product-section .product-container .info-block .body .tabs .item-t
+    padding: 0 !important
+  section .product-section .product-container .info-block .body .tabs .item-t
+    background: none !important
+  section .product-section .product-container .info-block .body .tabs .item-t
+    gap: 0 !important
+  section .product-section .product-container .info-block .body .tabs .item-t .content
+    grid-template-columns: 1fr !important
+

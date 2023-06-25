@@ -17,39 +17,6 @@
     <link rel="stylesheet" href="src/styles/components/sections.sass">
 </head>
 <body>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="modal-title" id="exampleModalLabel"></div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-            </div>
-            <div class="modal-body">
-                <label for="name" class="custom-input required _d-none" data-inputType="name">
-                    <input type="text" id="name" placeholder="Имя">
-                </label>
-                <label for="lastName" class="custom-input required _d-none" data-inputType="lastName">
-                    <input type="text" id="lastName" placeholder="Фамилия">
-                </label>
-                <label for="email" class="custom-input required _d-none" data-inputType="email">
-                    <input type="text" id="email" placeholder="Почта для связи">
-                </label>
-                <label for="textArea" class="custom-input text-area _d-none" data-inputType="text">
-                    <textarea id="textArea" placeholder=""></textarea>
-                </label>
-                <label for="phone" class="custom-input required _d-none" data-inputType="phone">
-                    <input type="text" id="phone" placeholder="Номер телефона">
-                </label>
-                <label for="social" class="custom-input _d-none" data-inputType="social">
-                    <input type="text" id="social" placeholder="Ссылка на соц.сеть">
-                </label>
-                <div class="btn blue no-br _d-none">отправить</div>
-                <span class="_d-none">Нажимая на кнопку, вы даете <a href="privacy.html">согласие на обработку своих персональных данных</a></span>
-
-            </div>
-        </div>
-    </div>
-</div>
 <header>
     <div class="header-container">
         <a href="index.html" class="logo"><img src="src/images/logos/Logo.svg" alt=""></a>
@@ -233,88 +200,86 @@
         <div class="breadcrumbs-section">
             <div class="container breadcrumbs-container">
                 <a href="index.html">Главная</a>
-                <a href="faq.html">faq</a>
+                <a href="training.html">применение станков</a>
             </div>
         </div>
     </section>
     <section>
-        <div class="faq-section">
-            <div class="container faq-container">
-                <h1 class="title">Вопрос-ответ</h1>
-                <div class="btn blue" data-modal="faq">задать вопрос</div>
+        <div class="application-section">
+            <div class="container application-container">
+                <h1 class="title">применение станков</h1>
                 <div class="content">
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <div class="accordion-button" data-bs-toggle="collapse"
-                                 data-bs-target="#collapse_faq_1" aria-expanded="true" aria-controls="collapse_faq_1">
-                                Почему у вас на сайте не показаны цены станков?
-                            </div>
-                        </div>
-                        <div id="collapse_faq_1" class="accordion-collapse collapse"
-                             data-bs-parent="#collapse_faq_1">
-                            <p class="body">Цены на станки не указаны из-за разности комплектаций. Однако, Вы можете уточнить, оставив заявку на обратный звонок.</p>
-                        </div>
+                    <div class="item-a">
+                        <div class="name">Автомобилестроение</div>
+                        <a href="catalog.html" class="arrow">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="50" height="50" rx="25" fill="white"/>
+                                <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#0D0D0D" stroke-opacity="0.1"/>
+                                <rect x="10" y="10" width="30" height="30" rx="15" fill="#0D0D0D"/>
+                                <path d="M17.5 25H32.5M32.5 25L26.25 18.75M32.5 25L26.25 31.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
                     </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <div class="accordion-button" data-bs-toggle="collapse"
-                                 data-bs-target="#collapse_faq_1" aria-expanded="true" aria-controls="collapse_faq_1">
-                                Почему у вас на сайте не показаны цены станков?
-                            </div>
-                        </div>
-                        <div id="collapse_faq_1" class="accordion-collapse collapse"
-                             data-bs-parent="#collapse_faq_1">
-                            <p class="body">Цены на станки не указаны из-за разности комплектаций. Однако, Вы можете уточнить, оставив заявку на обратный звонок.</p>
-                        </div>
+                    <div class="item-a">
+                        <div class="name">Мебельная промышленность</div>
+                        <a href="catalog.html" class="arrow">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="50" height="50" rx="25" fill="white"/>
+                                <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#0D0D0D" stroke-opacity="0.1"/>
+                                <rect x="10" y="10" width="30" height="30" rx="15" fill="#0D0D0D"/>
+                                <path d="M17.5 25H32.5M32.5 25L26.25 18.75M32.5 25L26.25 31.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
                     </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <div class="accordion-button" data-bs-toggle="collapse"
-                                 data-bs-target="#collapse_faq_1" aria-expanded="true" aria-controls="collapse_faq_1">
-                                Почему у вас на сайте не показаны цены станков?
-                            </div>
-                        </div>
-                        <div id="collapse_faq_1" class="accordion-collapse collapse"
-                             data-bs-parent="#collapse_faq_1">
-                            <p class="body">Цены на станки не указаны из-за разности комплектаций. Однако, Вы можете уточнить, оставив заявку на обратный звонок.</p>
-                        </div>
+                    <div class="item-a">
+                        <div class="name">Химическая промышленность</div>
+                        <a href="catalog.html" class="arrow">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="50" height="50" rx="25" fill="white"/>
+                                <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#0D0D0D" stroke-opacity="0.1"/>
+                                <rect x="10" y="10" width="30" height="30" rx="15" fill="#0D0D0D"/>
+                                <path d="M17.5 25H32.5M32.5 25L26.25 18.75M32.5 25L26.25 31.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </a>
                     </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <div class="accordion-button" data-bs-toggle="collapse"
-                                 data-bs-target="#collapse_faq_1" aria-expanded="true" aria-controls="collapse_faq_1">
-                                Почему у вас на сайте не показаны цены станков?
-                            </div>
-                        </div>
-                        <div id="collapse_faq_1" class="accordion-collapse collapse"
-                             data-bs-parent="#collapse_faq_1">
-                            <p class="body">Цены на станки не указаны из-за разности комплектаций. Однако, Вы можете уточнить, оставив заявку на обратный звонок.</p>
-                        </div>
+                    <div class="item-a">
+                        <div class="name">Металлоконструкции</div>
+                        <a href="catalog.html" class="arrow">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="50" height="50" rx="25" fill="white"/>
+                                <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#0D0D0D" stroke-opacity="0.1"/>
+                                <rect x="10" y="10" width="30" height="30" rx="15" fill="#0D0D0D"/>
+                                <path d="M17.5 25H32.5M32.5 25L26.25 18.75M32.5 25L26.25 31.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </a>
                     </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <div class="accordion-button" data-bs-toggle="collapse"
-                                 data-bs-target="#collapse_faq_1" aria-expanded="true" aria-controls="collapse_faq_1">
-                                Почему у вас на сайте не показаны цены станков?
-                            </div>
-                        </div>
-                        <div id="collapse_faq_1" class="accordion-collapse collapse"
-                             data-bs-parent="#collapse_faq_1">
-                            <p class="body">Цены на станки не указаны из-за разности комплектаций. Однако, Вы можете уточнить, оставив заявку на обратный звонок.</p>
-                        </div>
+                    <div class="item-a">
+                        <div class="name">Спортивное оборудование</div>
+                        <a href="catalog.html" class="arrow">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="50" height="50" rx="25" fill="white"/>
+                                <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#0D0D0D" stroke-opacity="0.1"/>
+                                <rect x="10" y="10" width="30" height="30" rx="15" fill="#0D0D0D"/>
+                                <path d="M17.5 25H32.5M32.5 25L26.25 18.75M32.5 25L26.25 31.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
                     </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <div class="accordion-button" data-bs-toggle="collapse"
-                                 data-bs-target="#collapse_faq_1" aria-expanded="true" aria-controls="collapse_faq_1">
-                                Почему у вас на сайте не показаны цены станков?
-                            </div>
-                        </div>
-                        <div id="collapse_faq_1" class="accordion-collapse collapse"
-                             data-bs-parent="#collapse_faq_1">
-                            <p class="body">Цены на станки не указаны из-за разности комплектаций. Однако, Вы можете уточнить, оставив заявку на обратный звонок.</p>
-                        </div>
+                    <div class="item-a">
+                        <div class="name">Машиностроение</div>
+                        <a href="catalog.html" class="arrow">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="50" height="50" rx="25" fill="white"/>
+                                <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#0D0D0D" stroke-opacity="0.1"/>
+                                <rect x="10" y="10" width="30" height="30" rx="15" fill="#0D0D0D"/>
+                                <path d="M17.5 25H32.5M32.5 25L26.25 18.75M32.5 25L26.25 31.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
                     </div>
+                    <span>
+                        Трубогибочные станки для гибки труб и профиля широко используются на рынке металлообработки в таких отраслях как: машиностроение, строительство, химическая промышленность, мебельная промышленность, автомобилестроение, пищевая промышленность и многие другие. Использование трубогибочных станков позволяет оптимизировать производственные процессы и расширить технические возможности. Широкий ассортимент трубогибочных станков позволяет четко подобрать нужную модель оборудования по техническому заданию заказчика. Трубогибычные станки бывают разных модификаций: трубогиб автоматический с ЧПУ управлением, трубогиб полуавтоматический с ЧПУ, трубогиб ЧПУ с функцией проталкивания, дорновый полуавтоматический трубогиб, бездорновый электромеханический трубогибочный станок, электрогидравлический дорновый трубогиб, ручной трубогиб, трубогиб ЧПУ, трубогиб для мебели, трубогиб для нержавеющей трубы, трубогиб для профильной трубы, трубогиб для котельных труб. В том числе проволокогибочные станки для гибки проволоки, которые делятся на 2 типа: трубогиб для гибки проволоки 2Д и проволокогиб для проволоки 3Д.
+                    </span>
                 </div>
             </div>
         </div>

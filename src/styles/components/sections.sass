@@ -9,6 +9,8 @@ section
   .landing-section
     background: url("/src/images/backgrounds/landing.jpg")
     padding: 80px 0 80px
+    background-repeat: no-repeat
+    background-size: cover
 
     .landing-container
       margin: 0 0 0 $margin
@@ -418,6 +420,17 @@ section
           grid-template-columns: repeat(2, 1fr)
           gap: 20px
 
+          .img
+            height: 400px
+            width: 100%
+            border: $border_black_01
+
+            img
+              width: 100%
+              height: 100%
+              object-position: center
+              object-fit: contain
+
 .catalog-page-section
   .catalog-page-container
     display: grid
@@ -447,6 +460,7 @@ section
         display: flex
         flex-direction: column
         gap: 40px
+
 
         .filters
           display: flex
@@ -480,6 +494,11 @@ section
       flex-direction: column
       gap: 20px
 
+      .btn.filter-btn
+        display: none
+        background: $light-blue
+        color: $blue
+
       .categories
         display: grid
         grid-template-columns: repeat(4, 1fr)
@@ -489,7 +508,7 @@ section
           align-items: center
           justify-content: center
           padding: 23px
-          background: $black_01
+          border: $border_black_01
           cursor: pointer
 
           span
@@ -599,7 +618,7 @@ section
               img
                 width: 100%
                 height: 100%
-                object-fit: container
+                object-fit: contain
 
             .name-machine
               padding: 20px
@@ -663,7 +682,13 @@ section
         .header
           padding: 20px
           border-bottom: $border_black_01
+          display: flex
+          gap: 20px
 
+          .name
+            @include text_24_regular
+            max-width: 200px
+            flex: 1
           .avatar
             width: 80px
             height: 80px
@@ -696,6 +721,8 @@ section
       .item-s
         height: 400px
         padding: 20px
+        display: flex
+        justify-content: flex-end
 
         span
           color: $white
@@ -875,6 +902,8 @@ section
             font-size: 20px
             line-height: 1.2
 
+            ul
+              padding-left: 20px
             ul, li
               list-style: disc
               line-height: 1.2
@@ -958,8 +987,6 @@ section
               text-align: right
               display: block
 
-            span
-
           .chart
             p
               @include text_16_regular
@@ -1028,6 +1055,17 @@ section
       .item-c
         max-width: 720px
 
+        ol
+          color: $black_04
+          margin: 0
+
+        li
+          list-style: decimal
+
+          ol
+            li
+              list-style: lower-latin
+
         .title
           @include text_36_regular
           text-transform: uppercase
@@ -1040,25 +1078,178 @@ section
   .faq-container
     .title
       margin-bottom: 35px
+
     .btn
       max-width: 202px
       padding: 10px
       @include text_16_medium
       margin-bottom: 40px
+
     .content
       @include grid_column(2, 20px)
 
       .accordion-item
         border: $border_black_01
         padding: 40px
+
       .accordion-button
         @include text_24_regular
         text-transform: uppercase
         cursor: pointer
         -webkit-touch-callout: none
         -webkit-user-select: none
+
       .body
         padding-top: 20px
         color: $black_04
+
+.application-section
+  .application-container
+    .title
+      margin-bottom: 35px
+
+    .content
+      @include grid_column(2, 20px)
+
+      .item-a
+        height: 260px
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 20px
+
+        .name
+          color: $white
+          text-transform: uppercase
+          @include text_36_regular
+          background-size: cover
+          background-position: center
+
+        .arrow
+
+      .item-a:nth-of-type(1)
+        background-image: url("../images/applications/1.jpg")
+
+      .item-a:nth-of-type(2)
+        background-image: url("../images/applications/4.jpg")
+
+      .item-a:nth-of-type(3)
+        background-image: url("../images/applications/2.jpg")
+
+      .item-a:nth-of-type(4)
+        background-image: url("../images/applications/5.jpg")
+
+      .item-a:nth-of-type(5)
+        background-image: url("../images/applications/3.jpg")
+
+      .item-a:nth-of-type(6)
+        background-image: url("../images/applications/6.jpg")
+
+      span
+        margin-top: 20px
+        color: $black_04
+        @include text_12_regular
+
+.privacy-section
+  .privacy-container
+    .title
+      margin-bottom: 35px
+
+    .content
+      display: flex
+      flex-direction: column
+      gap: 1rem
+
+      h2
+        font-size: 24px
+
+      ul, li
+        list-style: decimal
+
+      ul
+        display: flex
+        flex-direction: column
+        gap: .5rem
+
+      li
+        padding-left: .2rem
+
+.site-map-section
+  .site-map-container
+    .title
+      margin-bottom: 35px
+
+    .content
+      @include grid_column(4, 20px)
+
+      .item-s
+        display: flex
+        flex-direction: column
+        gap: 40px
+        padding: 20px
+        border: $border_black_01
+        height: 280px
+        overflow: auto
+
+        .title
+          text-transform: uppercase
+          @include text_24_regular
+
+        .links
+          @include grid_column(2, 30px 40px)
+
+          a
+            color: $black_04
+
+.contact-page-section
+  .contact-page-container
+    .title
+      margin-bottom: 35px
+
+    > .content
+      @include grid_column(4, 0)
+
+      .item-c.big
+        grid-column: span 2
+
+      .item-c:nth-of-type(5)
+        border-right: none
+
+      .item-c:last-of-type
+        border-left: none
+
+        .content
+          color: $blue
+          @include heading_54
+
+      .item-c
+        padding: 40px
+        border: $border_black_01
+
+        .title
+          text-transform: uppercase
+          @include text_24_regular
+          color: $black_04
+
+        > .content.small
+          font-size: 20px
+          margin-top: 10px
+
+        > .content.blue
+          font-size: 23px
+          color: $blue
+
+        .content
+          font-size: 36px
+          line-height: 1.2
+
+        a.content
+          font-size: 32px
+
+        a:nth-of-type(2)
+          margin-top: 10px
+          font-size: 24px
+          line-height: 1.2
 
 

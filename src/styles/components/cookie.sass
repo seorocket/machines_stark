@@ -1,0 +1,19 @@
+.cookie-notification
+  display: none
+.cookie-notification.show
+  display: block
+  padding: 40px
+  background: $white
+  position: fixed
+  bottom: 0
+  left: 0
+  z-index: 9999
+  .title
+    margin-bottom: 24px
+    text-transform: uppercase
+    @include text_36_regular
+  p
+    margin-bottom: 40px
+    color: $black_04
+  .btn
+    max-width: 386px

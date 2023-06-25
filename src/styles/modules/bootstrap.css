@@ -759,6 +759,7 @@ progress {
     --bs-gutter-x: 40px;
     --bs-gutter-y: 0;
     width: 100%;
+    max-width: 335px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -6041,9 +6042,8 @@ textarea.form-control-lg {
     pointer-events: auto;
     background-color: var(--bs-modal-bg);
     background-clip: padding-box;
-    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
-    border-radius: var(--bs-modal-border-radius);
     outline: 0;
+    padding: 40px;
 }
 
 .modal-backdrop {
@@ -6072,10 +6072,7 @@ textarea.form-control-lg {
     flex-shrink: 0;
     align-items: center;
     justify-content: space-between;
-    padding: var(--bs-modal-header-padding);
-    border-bottom: var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);
-    border-top-left-radius: var(--bs-modal-inner-border-radius);
-    border-top-right-radius: var(--bs-modal-inner-border-radius);
+
 }
 
 .modal-header .btn-close {
@@ -6091,7 +6088,6 @@ textarea.form-control-lg {
 .modal-body {
     position: relative;
     flex: 1 1 auto;
-    padding: var(--bs-modal-padding);
 }
 
 .modal-footer {
@@ -6118,7 +6114,7 @@ textarea.form-control-lg {
     }
 
     .modal-dialog {
-        max-width: var(--bs-modal-width);
+        max-width: 870px;
         margin-right: auto;
         margin-left: auto;
     }

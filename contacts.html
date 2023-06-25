@@ -17,39 +17,6 @@
     <link rel="stylesheet" href="src/styles/components/sections.sass">
 </head>
 <body>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="modal-title" id="exampleModalLabel"></div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-            </div>
-            <div class="modal-body">
-                <label for="name" class="custom-input required _d-none" data-inputType="name">
-                    <input type="text" id="name" placeholder="Имя">
-                </label>
-                <label for="lastName" class="custom-input required _d-none" data-inputType="lastName">
-                    <input type="text" id="lastName" placeholder="Фамилия">
-                </label>
-                <label for="email" class="custom-input required _d-none" data-inputType="email">
-                    <input type="text" id="email" placeholder="Почта для связи">
-                </label>
-                <label for="textArea" class="custom-input text-area _d-none" data-inputType="text">
-                    <textarea id="textArea" placeholder=""></textarea>
-                </label>
-                <label for="phone" class="custom-input required _d-none" data-inputType="phone">
-                    <input type="text" id="phone" placeholder="Номер телефона">
-                </label>
-                <label for="social" class="custom-input _d-none" data-inputType="social">
-                    <input type="text" id="social" placeholder="Ссылка на соц.сеть">
-                </label>
-                <div class="btn blue no-br _d-none">отправить</div>
-                <span class="_d-none">Нажимая на кнопку, вы даете <a href="privacy.html">согласие на обработку своих персональных данных</a></span>
-
-            </div>
-        </div>
-    </div>
-</div>
 <header>
     <div class="header-container">
         <a href="index.html" class="logo"><img src="src/images/logos/Logo.svg" alt=""></a>
@@ -233,87 +200,40 @@
         <div class="breadcrumbs-section">
             <div class="container breadcrumbs-container">
                 <a href="index.html">Главная</a>
-                <a href="faq.html">faq</a>
+                <a href="training.html">Контакты</a>
             </div>
         </div>
     </section>
     <section>
-        <div class="faq-section">
-            <div class="container faq-container">
-                <h1 class="title">Вопрос-ответ</h1>
-                <div class="btn blue" data-modal="faq">задать вопрос</div>
+        <div class="contact-page-section">
+            <div class="container contact-page-container">
+                <h1 class="title">Контакты</h1>
                 <div class="content">
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <div class="accordion-button" data-bs-toggle="collapse"
-                                 data-bs-target="#collapse_faq_1" aria-expanded="true" aria-controls="collapse_faq_1">
-                                Почему у вас на сайте не показаны цены станков?
-                            </div>
-                        </div>
-                        <div id="collapse_faq_1" class="accordion-collapse collapse"
-                             data-bs-parent="#collapse_faq_1">
-                            <p class="body">Цены на станки не указаны из-за разности комплектаций. Однако, Вы можете уточнить, оставив заявку на обратный звонок.</p>
-                        </div>
+                    <div class="item-c big">
+                        <div class="title">Почтовый адрес:</div>
+                        <div class="content">445043, Тольятти 43, а/я 1729</div>
                     </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <div class="accordion-button" data-bs-toggle="collapse"
-                                 data-bs-target="#collapse_faq_1" aria-expanded="true" aria-controls="collapse_faq_1">
-                                Почему у вас на сайте не показаны цены станков?
-                            </div>
-                        </div>
-                        <div id="collapse_faq_1" class="accordion-collapse collapse"
-                             data-bs-parent="#collapse_faq_1">
-                            <p class="body">Цены на станки не указаны из-за разности комплектаций. Однако, Вы можете уточнить, оставив заявку на обратный звонок.</p>
-                        </div>
+                    <div class="item-c big">
+                        <div class="title">Фактический адрес:</div>
+                        <div class="content">Самарская обл., г. Тольятти, ул. <br>Борковская, влд. 36Б стр. 3, офис 1</div>
                     </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <div class="accordion-button" data-bs-toggle="collapse"
-                                 data-bs-target="#collapse_faq_1" aria-expanded="true" aria-controls="collapse_faq_1">
-                                Почему у вас на сайте не показаны цены станков?
-                            </div>
-                        </div>
-                        <div id="collapse_faq_1" class="accordion-collapse collapse"
-                             data-bs-parent="#collapse_faq_1">
-                            <p class="body">Цены на станки не указаны из-за разности комплектаций. Однако, Вы можете уточнить, оставив заявку на обратный звонок.</p>
-                        </div>
+                    <div class="item-c">
+                        <div class="title">Звонок по России бесплатный</div>
+                        <a href="tel:+78005055891" class="content">8 (800) 505-58-91</a>
                     </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <div class="accordion-button" data-bs-toggle="collapse"
-                                 data-bs-target="#collapse_faq_1" aria-expanded="true" aria-controls="collapse_faq_1">
-                                Почему у вас на сайте не показаны цены станков?
-                            </div>
-                        </div>
-                        <div id="collapse_faq_1" class="accordion-collapse collapse"
-                             data-bs-parent="#collapse_faq_1">
-                            <p class="body">Цены на станки не указаны из-за разности комплектаций. Однако, Вы можете уточнить, оставив заявку на обратный звонок.</p>
-                        </div>
+                    <div class="item-c">
+                        <div class="title">Техподдержка:</div>
+                        <a href="tel:+79608394151" class="content">8 (960) 839-41-51</a>
+                        <a href="mailto:service@stanki-stark.ru" class="content">service@stanki-stark.ru</a>
                     </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <div class="accordion-button" data-bs-toggle="collapse"
-                                 data-bs-target="#collapse_faq_1" aria-expanded="true" aria-controls="collapse_faq_1">
-                                Почему у вас на сайте не показаны цены станков?
-                            </div>
-                        </div>
-                        <div id="collapse_faq_1" class="accordion-collapse collapse"
-                             data-bs-parent="#collapse_faq_1">
-                            <p class="body">Цены на станки не указаны из-за разности комплектаций. Однако, Вы можете уточнить, оставив заявку на обратный звонок.</p>
-                        </div>
+                    <div class="item-c">
+                        <div class="title">Пишите нам:</div>
+                        <a href="mailto:zakaz@stanki-stark.ru" class="content blue">zakaz@stanki-stark.ru</a>
+                        <div class="content small">Доставка станков по всей России</div>
                     </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <div class="accordion-button" data-bs-toggle="collapse"
-                                 data-bs-target="#collapse_faq_1" aria-expanded="true" aria-controls="collapse_faq_1">
-                                Почему у вас на сайте не показаны цены станков?
-                            </div>
-                        </div>
-                        <div id="collapse_faq_1" class="accordion-collapse collapse"
-                             data-bs-parent="#collapse_faq_1">
-                            <p class="body">Цены на станки не указаны из-за разности комплектаций. Однако, Вы можете уточнить, оставив заявку на обратный звонок.</p>
-                        </div>
+                    <div class="item-c">
+                        <div class="title">Время работы (МСК):</div>
+                        <div class="content">8:00 - 16:00</div>
                     </div>
                 </div>
             </div>

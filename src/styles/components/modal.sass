@@ -1,0 +1,25 @@
+.modal
+  ._d-none
+    display: none
+  .modal-header
+    margin-bottom: 40px
+
+    .modal-title
+      text-transform: uppercase
+      @include heading_54
+
+  .modal-body
+    @include grid_column(2, 20px)
+
+    .text-area
+      grid-column: span 2
+    .btn
+      grid-column: 2
+    span
+      font-size: 12px
+      line-height: 1.2
+      grid-column: 2
+      a
+        font-size: 12px
+        line-height: 1.2
+        color: $blue

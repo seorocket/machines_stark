@@ -16,6 +16,39 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="exampleModalLabel"></div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <label for="name" class="custom-input required _d-none" data-inputType="name">
+                    <input type="text" id="name" placeholder="Имя">
+                </label>
+                <label for="lastName" class="custom-input required _d-none" data-inputType="lastName">
+                    <input type="text" id="lastName" placeholder="Фамилия">
+                </label>
+                <label for="email" class="custom-input required _d-none" data-inputType="email">
+                    <input type="text" id="email" placeholder="Почта для связи">
+                </label>
+                <label for="textArea" class="custom-input text-area _d-none" data-inputType="text">
+                    <textarea id="textArea" placeholder=""></textarea>
+                </label>
+                <label for="phone" class="custom-input required _d-none" data-inputType="phone">
+                    <input type="text" id="phone" placeholder="Номер телефона">
+                </label>
+                <label for="social" class="custom-input _d-none" data-inputType="social">
+                    <input type="text" id="social" placeholder="Ссылка на соц.сеть">
+                </label>
+                <div class="btn blue no-br _d-none">отправить</div>
+                <span class="_d-none">Нажимая на кнопку, вы даете <a href="privacy.html">согласие на обработку своих персональных данных</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
 <header>
     <div class="header-container">
         <a href="index.html" class="logo"><img src="src/images/logos/Logo.svg" alt=""></a>

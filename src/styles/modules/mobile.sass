@@ -114,6 +114,10 @@ $border_black_01: 1px solid $black_01
     padding-top: 80px !important
 
 @media screen and (max-width: 1200px)
+  .requisites-section .requisites-container > .content
+    grid-template-columns: repeat(2, 1fr) !important
+  .requisites-section .requisites-container > .content .item-r
+    grid-column: span 2 !important
   .snap-in-section .snap-in-container.reviews .content .btn
     grid-column: 2 !important
   .snap-in-section .snap-in-container.reviews .content
@@ -160,6 +164,29 @@ $border_black_01: 1px solid $black_01
 @media screen and (max-width: 768px)
   \:root
     --container: 540px
+
+  .requisites-section .requisites-container > .content .item-r .title
+    font-size: 16px !important
+
+  .requisites-section .requisites-container > .content .item-r .content
+    font-size: 20px !important
+
+  .requisites-section .requisites-container > .content .item-r.small,
+  .requisites-section .requisites-container > .content .item-r
+    padding: 20px !important
+
+  section .blog-section .blog-item-container article img
+    max-height: 190px !important
+
+  section .blog-section .blog-item-container .page-img
+    margin-left: 0 !important
+    width: 100% !important
+    img
+      height: 180px !important
+  section .blog-section .blog-item-container .title
+    font-size: 36px !important
+  .snap-in-section .snap-in-container.video .content .item-v iframe
+    height: 220px !important
   .snap-in-section .snap-in-container.reviews .content .item-r .body
     padding: 20px !important
   .snap-in-section .snap-in-container.reviews .content .item-r .body p

@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Станки "старк"</title>
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="icon" type="image/png" href="src/images/logos/favicon.ico"/>
     <!--  scripts  -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
@@ -16,6 +19,47 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="exampleModalLabel"></div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <label for="name" class="custom-input required _d-none" data-inputType="name">
+                    <input type="text" id="name" placeholder="Имя">
+                </label>
+                <label for="lastName" class="custom-input required _d-none" data-inputType="lastName">
+                    <input type="text" id="lastName" placeholder="Фамилия">
+                </label>
+                <label for="email" class="custom-input required _d-none" data-inputType="email">
+                    <input type="text" id="email" placeholder="Почта для связи">
+                </label>
+                <label for="textArea" class="custom-input text-area _d-none" data-inputType="text">
+                    <textarea id="textArea" placeholder=""></textarea>
+                </label>
+                <label for="phone" class="custom-input required _d-none" data-inputType="phone">
+                    <input type="text" id="phone" placeholder="Номер телефона">
+                </label>
+                <label for="social" class="custom-input _d-none" data-inputType="social">
+                    <input type="text" id="social" placeholder="Ссылка на соц.сеть">
+                </label>
+                <div class="btn blue no-br _d-none">отправить</div>
+                <span class="_d-none">Нажимая на кнопку, вы даете <a href="privacy.html">согласие на обработку своих персональных данных</a></span>
+                <iframe width="560" class="_d-none" height="315" src="https://youtu.be/4y2HqXKjoWc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cookie-notification">
+    <div class="title">Мы используем Cookie-файлы</div>
+    <p>Без этих файлов - сайт просто отказывается работать.</p>
+    <div class="btn acceptCookie blue no-br">согласен</div>
+</div>
 <header>
     <div class="header-container">
         <a href="index.html" class="logo"><img src="src/images/logos/Logo.svg" alt=""></a>
@@ -43,7 +87,18 @@
                 <a href="tel:+78005055891" class="phone">8 (800) 505-58-91</a>
                 <a href="mailto:zakaz@stanki-stark.ru" class="email">zakaz@stanki-stark.ru</a>
             </div>
-            <div class="btn recall">Обратный звонок</div>
+            <div class="btn recall" data-modal="recall">Обратный звонок</div>
+        </div>
+        <div class="burger-menu">
+            <div class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="menu-alt-2">
+                        <path id="Icon" d="M4 12H20M4 8H20M4 16H12" stroke="#024D7F" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+            </div>
+            <p>меню</p>
         </div>
     </div>
     <div class="catalog-menu">
@@ -66,6 +121,7 @@
                 <div class="product">
                     <div class="header">
                         <div class="info">
+                            <!--                            TODO добавить uppercase-->
                             <div class="name">Трубогибы</div>
                             <div class="count">2 024 станков</div>
                             <a href="catalog.html" class="link">
@@ -80,14 +136,15 @@
                         </div>
                         <img src="src/images/machines/trubi.jpg" alt="">
                     </div>
+                    <!--                    TODO добавить отступы-->
                     <div class="body accordion" id="accordionCatalog">
                         <div class="accordion-item">
-                            <h2 class="accordion-header">
+                            <div class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
                                     по степни автоматизации
                                 </button>
-                            </h2>
+                            </div>
                             <div id="collapse1" class="accordion-collapse collapse show"
                                  data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
@@ -99,12 +156,12 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header">
+                            <div class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
                                     по степни автоматизации
                                 </button>
-                            </h2>
+                            </div>
                             <div id="collapse2" class="accordion-collapse collapse"
                                  data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
@@ -116,12 +173,12 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header">
+                            <div class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
                                     по степни автоматизации
                                 </button>
-                            </h2>
+                            </div>
                             <div id="collapse3" class="accordion-collapse collapse"
                                  data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
@@ -154,12 +211,12 @@
                     </div>
                     <div class="body accordion" id="accordionCatalog2">
                         <div class="accordion-item">
-                            <h2 class="accordion-header">
+                            <div class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
                                     по степни автоматизации
                                 </button>
-                            </h2>
+                            </div>
                             <div id="collapse12" class="accordion-collapse collapse show"
                                  data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
@@ -171,12 +228,12 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header">
+                            <div class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse22" aria-expanded="true" aria-controls="collapse22">
                                     по степни автоматизации
                                 </button>
-                            </h2>
+                            </div>
                             <div id="collapse22" class="accordion-collapse collapse"
                                  data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
@@ -248,32 +305,41 @@
     <div class="container">
         <div class="main-footer">
             <nav>
-                <ul>
-                    <li><a href="">Трубогибы</a></li>
-                    <li><a href="">Проволкогибы</a></li>
-                    <li><a href="">Металшейпинг</a></li>
-                    <li><a href="">Оснастка</a></li>
-                    <li><a href="">Профилегибы</a></li>
-                    <li><a href="">Индивидуальный<br>проект</a></li>
-                </ul>
-                <ul>
-                    <li><a href="">Сертификаты</a></li>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">Лизинг</a></li>
-                    <li><a href="">Контакты</a></li>
-                    <li><a href="">Новости </a></li>
-                    <li><a href="">Статьи и видео</a></li>
-                    <li><a href="">Реквизиты<br>компании</a></li>
-                </ul>
-                <ul>
-                    <li><a href="">Доставка</a></li>
-                    <li><a href="">Применение<br>станков</a></li>
-                    <li><a href="">Блог</a></li>
-                    <li><a href="">Карта сайта</a></li>
-                    <li><a href="">Вопрос-ответ</a></li>
-                    <li><a href="">Обучение</a></li>
-                    <li><a href="">Политика</a></li>
-                </ul>
+                <div class="item-f">
+                    <div class="title">ПРОИЗВОДСТВО</div>
+                    <ul>
+                        <li><a href="">Трубогибы</a></li>
+                        <li><a href="">Проволкогибы</a></li>
+                        <li><a href="">Металшейпинг</a></li>
+                        <li><a href="">Оснастка</a></li>
+                        <li><a href="">Профилегибы</a></li>
+                        <li><a href="">Индивидуальный<br>проект</a></li>
+                    </ul>
+                </div>
+                <div class="item-f">
+                    <div class="title">О КОМПАНИИ</div>
+                    <ul>
+                        <li><a href="">Сертификаты</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Лизинг</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Новости </a></li>
+                        <li><a href="">Статьи и видео</a></li>
+                        <li><a href="">Реквизиты<br>компании</a></li>
+                    </ul>
+                </div>
+                <div class="item-f">
+                    <div class="title">КЛИЕНТУ</div>
+                    <ul>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Применение<br>станков</a></li>
+                        <li><a href="">Блог</a></li>
+                        <li><a href="">Карта сайта</a></li>
+                        <li><a href="">Вопрос-ответ</a></li>
+                        <li><a href="">Обучение</a></li>
+                        <li><a href="">Политика</a></li>
+                    </ul>
+                </div>
             </nav>
             <div class="form">
                 <div class="title">ЗАКАЖИТЕ обратный звонок!</div>
@@ -282,14 +348,14 @@
                     <br>или проволокогибочных станков? Оставьте свои контакты - мы с Вами свяжемся.
                 </div>
                 <form data-typeForm="recall">
-                    <label for="name" class="custom-input white">
-                        <input type="text" id="name" placeholder="Ваше имя">
+                    <label for="footer_name" class="custom-input white">
+                        <input type="text" id="footer_name" placeholder="Ваше имя">
                     </label>
-                    <label for="phone" class="custom-input white">
-                        <input type="text" id="phone" placeholder="Ваш номер телефона">
+                    <label for="footer_phone" class="custom-input white">
+                        <input type="text" id="footer_phone" placeholder="Ваш номер телефона">
                     </label>
-                    <label for="email" class="custom-input white">
-                        <input type="text" id="email" placeholder="Ваш E-mail">
+                    <label for="footer_email" class="custom-input white">
+                        <input type="text" id="footer_email" placeholder="Ваш E-mail">
                     </label>
                     <div class="btn blue no-br sendAjax">ОТПРАВИТЬ</div>
                     <span>Нажимая на кнопку, вы даете <a href="privacy.html">согласие на обработку своих персональных данных</a></span>
@@ -387,7 +453,7 @@
             </a>
         </div>
     </div>
-    <svg width="1880" height="160" viewBox="0 0 1880 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg height="160" viewBox="0 0 1880 160" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M174.413 49.8257C162.574 49.8257 150.523 50.8769 138.262 52.9792C126.423 55.0816 115.641 58.8658 105.916 64.3319C96.1912 69.3776 88.1577 76.5256 81.8154 85.7759C75.8959 94.6058 72.9362 105.959 72.9362 119.834C72.9362 136.653 77.3758 150.318 86.255 160.83C95.1342 170.921 105.916 178.7 118.601 184.166C128.748 188.371 139.53 191.945 150.946 194.888C162.362 197.831 173.99 200.564 185.829 203.087C198.091 205.61 209.929 208.133 221.346 210.656C233.184 213.178 244.601 216.332 255.594 220.116C281.386 228.946 301.892 241.56 317.114 257.958C332.758 274.357 340.58 296.011 340.58 322.921C340.58 348.149 336.141 368.963 327.262 385.361C318.805 401.759 307.178 415.214 292.379 425.726C278.003 436.238 261.09 444.017 241.641 449.062C222.614 453.687 202.319 456 180.755 456C159.191 456 138.473 453.898 118.601 449.693C99.151 445.488 81.3926 438.551 65.3255 428.88C49.2584 419.209 35.5168 406.595 24.1007 391.037C12.6846 375.48 4.651 356.559 0 334.274H57.7147C61.9429 348.57 68.4966 360.343 77.3758 369.593C86.255 378.844 96.4026 386.202 107.819 391.668C119.235 397.134 131.497 400.918 144.604 403.021C158.134 405.123 171.453 406.174 184.56 406.174C197.245 406.174 209.507 404.913 221.346 402.39C233.607 399.447 244.389 395.032 253.691 389.145C262.993 383.259 270.392 375.69 275.889 366.44C281.386 357.189 284.134 346.047 284.134 333.012C284.134 313.25 278.849 298.534 268.278 288.863C257.708 279.192 243.544 271.834 225.785 266.788C213.946 263.004 201.473 259.851 188.366 257.328C175.258 254.805 162.151 252.072 149.044 249.129C135.936 246.185 123.04 242.822 110.356 239.037C97.6711 234.833 86.0436 229.997 75.4731 224.531C58.5604 216.542 44.396 204.349 32.9799 187.95C21.5637 171.131 15.8557 150.108 15.8557 124.88C15.8557 101.333 20.5067 81.5712 29.8087 65.5934C39.1107 49.6155 51.161 36.7911 65.9597 27.1203C80.7584 17.4495 97.2483 10.5117 115.429 6.30705C134.033 2.10235 153.695 0 174.413 0C191.325 0.420465 206.547 1.89212 220.077 4.41496C234.03 6.51731 247.137 10.5118 259.399 16.3984C278.426 24.8078 294.282 37.4219 306.966 54.2407C319.651 71.0595 326.627 92.7137 327.896 119.203H273.986C272.295 106.169 268.278 95.2365 261.936 86.4067C256.017 77.5768 248.617 70.4288 239.738 64.9626C230.859 59.4966 220.711 55.7123 209.295 53.6099C198.302 51.0871 186.674 49.8257 174.413 49.8257Z"
               fill="white"/>
         <path d="M511.554 450.954V54.8714H367.585V5.04565H710.702V54.8714H566.732V450.954H511.554Z" fill="white"/>

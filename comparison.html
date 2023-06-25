@@ -19,6 +19,47 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="exampleModalLabel"></div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <label for="name" class="custom-input required _d-none" data-inputType="name">
+                    <input type="text" id="name" placeholder="Имя">
+                </label>
+                <label for="lastName" class="custom-input required _d-none" data-inputType="lastName">
+                    <input type="text" id="lastName" placeholder="Фамилия">
+                </label>
+                <label for="email" class="custom-input required _d-none" data-inputType="email">
+                    <input type="text" id="email" placeholder="Почта для связи">
+                </label>
+                <label for="textArea" class="custom-input text-area _d-none" data-inputType="text">
+                    <textarea id="textArea" placeholder=""></textarea>
+                </label>
+                <label for="phone" class="custom-input required _d-none" data-inputType="phone">
+                    <input type="text" id="phone" placeholder="Номер телефона">
+                </label>
+                <label for="social" class="custom-input _d-none" data-inputType="social">
+                    <input type="text" id="social" placeholder="Ссылка на соц.сеть">
+                </label>
+                <div class="btn blue no-br _d-none">отправить</div>
+                <span class="_d-none">Нажимая на кнопку, вы даете <a href="privacy.html">согласие на обработку своих персональных данных</a></span>
+                <iframe width="560" class="_d-none" height="315" src="https://youtu.be/4y2HqXKjoWc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cookie-notification">
+    <div class="title">Мы используем Cookie-файлы</div>
+    <p>Без этих файлов - сайт просто отказывается работать.</p>
+    <div class="btn acceptCookie blue no-br">согласен</div>
+</div>
 <header>
     <div class="header-container">
         <a href="index.html" class="logo"><img src="src/images/logos/Logo.svg" alt=""></a>
@@ -52,7 +93,8 @@
             <div class="icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="menu-alt-2">
-                        <path id="Icon" d="M4 12H20M4 8H20M4 16H12" stroke="#024D7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Icon" d="M4 12H20M4 8H20M4 16H12" stroke="#024D7F" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round"/>
                     </g>
                 </svg>
             </div>

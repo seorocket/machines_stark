@@ -14,8 +14,6 @@ $black_01: rgba(13, 13, 13, 0.1)
 $border_black_01: 1px solid $black_01
 
 
-
-
 @mixin background
   background-size: cover !important
   background-repeat: no-repeat !important
@@ -311,10 +309,25 @@ h1.title
     p:last-child
       margin-bottom: 0
 
+.burger-menu.hide
+  p
+    color: $black_04
+
+  svg g path
+    stroke: $black_04 !important
+
+#map
+  filter: grayscale(100%)
+  -ms-filter: grayscale(100%)
+  -webkit-filter: grayscale(100%)
+  -moz-filter: grayscale(100%)
+  -o-filter: grayscale(100%)
+
 .burger-menu
   display: none
   align-items: center
   gap: 10px
+
   p
     color: $blue
     text-transform: uppercase

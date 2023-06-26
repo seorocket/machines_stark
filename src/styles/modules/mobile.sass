@@ -17,6 +17,9 @@ $black_01: rgba(13, 13, 13, 0.1)
 $border_black_01: 1px solid $black_01
 
 @media screen and (max-width: 1919px)
+  .comparison-section .comparison-container .comparison-block .body .item-c .values .characteristic,
+  .comparison-section .comparison-container .comparison-block .header
+    grid-template-columns: repeat(5, 1fr) !important
   .site-map-section .site-map-container .content
     grid-template-columns: repeat(2, 1fr) !important
   .job-section .job-container .body
@@ -67,6 +70,9 @@ $border_black_01: 1px solid $black_01
     grid-column: span 2 !important
 
 @media screen and (max-width: 1400px)
+  .comparison-section .comparison-container .comparison-block .body .item-c .values .characteristic,
+  .comparison-section .comparison-container .comparison-block .header
+    grid-template-columns: repeat(4, 1fr) !important
   .contact-page-section .contact-page-container > .content
     grid-template-columns: repeat(2, 1fr) !important
   .about-section .about-container .content iframe
@@ -150,6 +156,18 @@ $border_black_01: 1px solid $black_01
 @media screen and (max-width: 990px)
   \:root
     --container: 720px
+  .comparison-section .comparison-container .comparison-block .body .item-c .values .characteristic .name
+    grid-column: span 2 !important
+  .comparison-section .comparison-container .comparison-block .body .item-c .values .characteristic
+    grid-template-columns: repeat(2, 1fr) !important
+  .comparison-section .comparison-container .comparison-block .body .item-c.main .values .characteristic .title,
+  .comparison-section .comparison-container .comparison-block .body .item-c.main .values .characteristic .name
+    display: none
+  .comparison-section .comparison-container .comparison-block .body
+    margin-top: 0 !important
+
+  .comparison-section .comparison-container .comparison-block .header
+    display: none !important
 
   .delivery-section .delivery-container .content .item-c p
     font-size: 14px !important
@@ -189,6 +207,23 @@ $border_black_01: 1px solid $black_01
 @media screen and (max-width: 768px)
   \:root
     --container: 540px
+  .comparison-section .comparison-container .comparison-block .body
+    width: 100%
+    overflow: auto
+  .comparison-section .comparison-container .comparison-block .body .item-c.main .values .name-machine
+    font-size: 14px !important
+  .comparison-section .comparison-container .comparison-block .body .item-c.main .values .name-machine,
+  .comparison-section .comparison-container .comparison-block .body .item-c.main .values .description
+    padding: 10px !important
+  .comparison-section .comparison-container .comparison-block .body .item-c .title
+    margin-bottom: 20px !important
+    font-size: 20px !important
+  .modal-content
+    padding: 20px !important
+  .modal .modal-body
+    grid-template-columns: 1fr !important
+  .modal .modal-header .modal-title
+    font-size: 24px !important
   .contact-page-section .contact-page-container > .content .item-c:nth-of-type(6)
     border-top: none !important
   .contact-page-section .contact-page-container > .content .item-c:nth-of-type(5)

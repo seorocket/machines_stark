@@ -28,6 +28,24 @@ export function utils() {
         })
     }
 
-
     checkCookies();
+
+    /**
+     * Мобильное меню
+     */
+
+    $('.burger-menu').on('click', function () {
+        const menu = $('.mobile-menu')
+        const burgerText = $(this).find('p')
+        if(menu.hasClass('show')){
+            menu.removeClass('show')
+            $(this).removeClass('hide')
+            burgerText.text('меню')
+        } else {
+            burgerText.text('Скрыть')
+            menu.addClass('show')
+            $(this).addClass('hide')
+        }
+
+    })
 }

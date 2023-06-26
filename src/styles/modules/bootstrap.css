@@ -5991,7 +5991,7 @@ textarea.form-control-lg {
 .modal-dialog {
     position: relative;
     width: auto;
-    margin: var(--bs-modal-margin);
+    margin-top: 20rem;
     pointer-events: none;
 }
 

@@ -30,12 +30,15 @@ export function modals() {
         const modalFields = modal.find('._d-none')
         const btn = modal.find('.btn')
         const span = modal.find('span')
+        const iframe = modal.find('iframe')
         const fields = config.fields
+        modal.find('label').addClass('_d-none')
+        iframe.addClass('_d-none')
         $.each(modalFields, (key, field) => {
             const type = $(field).attr('data-inputType')
-            $(field).addClass('_d-none')
             if (type) {
                 $.each(fields, (keyF, fieldName) => {
+                    console.log(fieldName)
                     if (fieldName != 'iframe') {
                         span.removeClass('_d-none')
                         btn.removeClass('_d-none')
@@ -45,6 +48,10 @@ export function modals() {
                             }
                             $(field).removeClass('_d-none')
                         }
+                    } else {
+                        iframe.removeClass('_d-none')
+                        span.addClass('_d-none')
+                        btn.addClass('_d-none')
                     }
                 })
             }

@@ -17,6 +17,10 @@ $black_01: rgba(13, 13, 13, 0.1)
 $border_black_01: 1px solid $black_01
 
 @media screen and (max-width: 1919px)
+  .site-map-section .site-map-container .content
+    grid-template-columns: repeat(2, 1fr) !important
+  .job-section .job-container .body
+    grid-template-columns: 1fr !important
   .snap-in-section .snap-in-container.sertify .content
     grid-template-columns: repeat(2, 1fr) !important
   .lising-section .lising-container .content .item-l.big:nth-of-type(2) .step
@@ -63,6 +67,8 @@ $border_black_01: 1px solid $black_01
     grid-column: span 2 !important
 
 @media screen and (max-width: 1400px)
+  .contact-page-section .contact-page-container > .content
+    grid-template-columns: repeat(2, 1fr) !important
   .about-section .about-container .content iframe
     height: 260px !important
     margin-left: calc(((100vw - var(--container)) / 2) * -1)
@@ -114,6 +120,11 @@ $border_black_01: 1px solid $black_01
     padding-top: 80px !important
 
 @media screen and (max-width: 1200px)
+  .application-section .application-container .content
+    grid-template-columns: 1fr !important
+  .delivery-section .delivery-container .content
+  .delivery-section .delivery-container .content
+    gap: 100px !important
   .requisites-section .requisites-container > .content
     grid-template-columns: repeat(2, 1fr) !important
   .requisites-section .requisites-container > .content .item-r
@@ -140,6 +151,20 @@ $border_black_01: 1px solid $black_01
   \:root
     --container: 720px
 
+  .delivery-section .delivery-container .content .item-c p
+    font-size: 14px !important
+
+  .delivery-section .delivery-container .content .item-c .title
+    font-size: 20px !important
+    margin-bottom: 30px !important
+
+  .delivery-section .delivery-container .content
+    grid-template-columns: 1fr !important
+    gap: 40px !important
+
+  .faq-section .faq-container .content
+    grid-template-columns: 1fr !important
+
   .catalog-page-section .catalog-page-container
     gap: 40px !important
     grid-template-columns: 1fr !important
@@ -164,6 +189,85 @@ $border_black_01: 1px solid $black_01
 @media screen and (max-width: 768px)
   \:root
     --container: 540px
+  .contact-page-section .contact-page-container > .content .item-c:nth-of-type(6)
+    border-top: none !important
+  .contact-page-section .contact-page-container > .content .item-c:nth-of-type(5)
+    border-right: 1px solid $black_01 !important
+    border-bottom: none !important
+  .contact-page-section .contact-page-container > .content .item-c a:nth-of-type(2)
+    font-size: 16px !important
+  .contact-page-section .contact-page-container > .content .item-c a.content
+    font-size: 24px !important
+  .contact-page-section .contact-page-container > .content .item-c .content
+    font-size: 20px !important
+  .contact-page-section .contact-page-container > .content .item-c .title
+    margin-bottom: 15px !important
+    font-size: 16px !important
+  .contact-page-section .contact-page-container > .content
+    grid-template-columns: 1fr !important
+  .contact-page-section .contact-page-container > .content .item-c.big
+    grid-column: auto !important
+  .contact-page-section .contact-page-container > .content .item-c
+    padding: 20px !important
+  .site-map-section .site-map-container .content
+    grid-template-columns: 1fr !important
+
+  .site-map-section .site-map-container .content .item-s .title
+    margin-bottom: 0
+    font-size: 20px !important
+  .site-map-section .site-map-container .content .item-s .links a
+    gap: 30px !important
+
+
+  .privacy-section .privacy-container .content ul li,
+  .privacy-section .privacy-container .content,
+  .privacy-section .privacy-container .content h2
+    font-size: 20px !important
+  .application-section .application-container .content .item-a
+    gap: 100px !important
+    height: auto !important
+  .application-section .application-container .content .item-a .name
+    font-size: 20px !important
+  .faq-section .faq-container .btn
+    margin-bottom: 20px !important
+
+  .faq-section .faq-container .content .body
+    font-size: 12px !important
+
+  .faq-section .faq-container .content .accordion-item
+    padding: 20px !important
+
+  .faq-section .faq-container .content .accordion-button
+    font-size: 20px !important
+
+  .job-section .job-container .body .accordion-item .accordion-body .item-b .content .item-c p
+    font-size: 14px !important
+
+  .job-section .job-container .body .accordion-item .accordion-body .item-b .title
+    font-size: 20px !important
+    margin-bottom: 20px !important
+
+  .job-section .job-container .body .accordion-item .accordion-button .open-accordion
+    font-size: 16px !important
+  .job-section .job-container .body .accordion-item .accordion-button .chart p,
+  .job-section .job-container .body .accordion-item .accordion-button .chart span
+    font-size: 14px !important
+  .job-section .job-container .body .accordion-item .accordion-button
+    gap: 30px 0 !important
+
+  .job-section .job-container .body .accordion-item .accordion-button .wages span
+    font-size: 12px !important
+
+  .job-section .job-container .body .accordion-item .accordion-button .wages p
+    font-size: 20px !important
+    margin-bottom: 10px !important
+
+  .job-section .job-container .body .accordion-item .accordion-button .name
+    font-size: 24px !important
+
+  .job-section .job-container .body .accordion-item .accordion-button,
+  .job-section .job-container .body .accordion-item .accordion-body
+    padding: 20px !important
 
   .requisites-section .requisites-container > .content .item-r .title
     font-size: 16px !important
@@ -181,6 +285,7 @@ $border_black_01: 1px solid $black_01
   section .blog-section .blog-item-container .page-img
     margin-left: 0 !important
     width: 100% !important
+
     img
       height: 180px !important
   section .blog-section .blog-item-container .title
@@ -326,6 +431,33 @@ $border_black_01: 1px solid $black_01
     --container: 335px
 
 @media screen and (max-width: 425px)
+
+  .faq-section .faq-container .btn
+    max-width: none !important
+  .job-section .job-container .body .accordion-item .accordion-button
+    .name
+      order: 0
+
+    .chart
+      order: 1
+
+    .wages
+      order: 2
+
+      span
+        text-align: left !important
+
+    .open-accordion
+      order: 3
+      text-align: left !important
+
+
+  .job-section .job-container .body .accordion-item .accordion-button .wages p
+    text-align: left !important
+
+  .job-section .job-container .body .accordion-item .accordion-button,
+  .job-section .job-container .body .accordion-item .accordion-body .item-b .content
+    grid-template-columns: 1fr !important
   .staff-section .staff-container .content .item-c .title
     font-size: 30px !important
 

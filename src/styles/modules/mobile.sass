@@ -1,21 +1,3 @@
-@mixin no_container
-  //width: 100vw
-  transform: translateX(calc(((100vw - var(--container)) / 2) * -1))
-// Базовые стили для сайта
-$blue: #024D7F
-$white: #FFFFFF
-$white_04: rgba(255, 255, 255, 0.4)
-$white_01: rgba(255, 255, 255, 0.1)
-$light-blue: #B9E5FA
-$black: #0D0D0D
-$black_005: rgba(13, 13, 13, 0.05)
-$black_05: rgba(13, 13, 13, 0.5)
-$black_04: rgba(13, 13, 13, 0.4)
-$black_02: rgba(13, 13, 13, 0.2)
-$black_01: rgba(13, 13, 13, 0.1)
-
-$border_black_01: 1px solid $black_01
-
 @media screen and (max-width: 1919px)
   .comparison-section .comparison-container .comparison-block .body .item-c .values .characteristic,
   .comparison-section .comparison-container .comparison-block .header
@@ -48,8 +30,6 @@ $border_black_01: 1px solid $black_01
   section .product-section .product-container
     gap: 40px !important
     grid-template-columns: 1fr !important
-  section .landing-section .landing-container
-    margin: 0 0 0 calc((100vw - 1200px) / 2) !important
   header
     .header-container
       max-width: 1400px !important
@@ -70,6 +50,13 @@ $border_black_01: 1px solid $black_01
     grid-column: span 2 !important
 
 @media screen and (max-width: 1400px)
+  footer .second-footer
+    grid-template-columns: repeat(3, 1fr) !important
+
+    .develop,
+    .time-work,
+    .address
+      display: none !important
   .comparison-section .comparison-container .comparison-block .body .item-c .values .characteristic,
   .comparison-section .comparison-container .comparison-block .header
     grid-template-columns: repeat(4, 1fr) !important
@@ -109,8 +96,6 @@ $border_black_01: 1px solid $black_01
     gap: 20px !important
   header .header-container
     max-width: 1200px !important
-  section .landing-section .landing-container
-    margin: 0 0 0 calc((100vw - 1000px) / 2) !important
   section .blog-section .blog-container
     grid-template-columns: repeat(2, 1fr) !important
 
@@ -126,6 +111,27 @@ $border_black_01: 1px solid $black_01
     padding-top: 80px !important
 
 @media screen and (max-width: 1200px)
+  .landing-section .landing-container .content .title .tag
+    order: 1
+  .landing-section .landing-container .content .title p:last-of-type
+    grid-column: auto !important
+  .landing-section .landing-container .content .title
+    grid-template-columns: 1fr !important
+    justify-items: start
+  .landing-section .landing-container
+    margin: 0 !important
+
+    .content
+      padding: 0 $margin
+  .landing-section .landing-container img
+    margin-top: -120px
+    max-height: 400px
+    z-index: -1
+  section .landing-section .landing-container .swiper-slide
+    grid-template-columns: 1fr !important
+    justify-items: center
+  footer
+    min-height: 1560px !important
   .application-section .application-container .content
     grid-template-columns: 1fr !important
   .delivery-section .delivery-container .content
@@ -152,10 +158,13 @@ $border_black_01: 1px solid $black_01
   header .header-container .contact-section
     display: none !important
 
-
 @media screen and (max-width: 990px)
-  \:root
-    --container: 720px
+  .landing-section .landing-container .content .title .tag
+    font-size: 56px !important
+  .landing-section .landing-container .content .title p:last-of-type
+    font-size: 48px !important
+  .landing-section .landing-container .content .title p:first-of-type
+    font-size: 96px !important
   .comparison-section .comparison-container .comparison-block .body .item-c .values .characteristic .name
     grid-column: span 2 !important
   .comparison-section .comparison-container .comparison-block .body .item-c .values .characteristic
@@ -196,8 +205,6 @@ $border_black_01: 1px solid $black_01
 
   section .call-section .call-container
     grid-template-columns: 1fr !important
-  section .call-section .call-container .form
-    @include no_container
 
   footer .second-footer
     .time-work,
@@ -205,8 +212,49 @@ $border_black_01: 1px solid $black_01
       display: none !important
 
 @media screen and (max-width: 768px)
-  \:root
-    --container: 540px
+  section .blog-section .blog-container .item-b
+    height: 260px
+    gap: 0 !important
+    justify-content: space-between
+  section .blog-section .blog-container .btn
+    max-width: var(--container)
+  section .blog-section .blog-container .item-b
+    @include no_container
+  section .call-section .call-container .form
+    @include no_container
+    display: flex
+    flex-direction: column
+    gap: 20px
+  .catalog-container .item-p .btn-section
+    .btn.blue
+      padding: 10px
+  .catalog-container .item-p .btn-section .play-video,
+  .catalog-container .item-p .btn-section .compare
+    padding: 10px !important
+  .catalog-container .item-p .btn-section .play-video svg,
+  .catalog-container .item-p .btn-section .compare svg
+    width: 20px !important
+    height: 20px !important
+  .landing-section .landing-container .content
+    padding-bottom: 300px
+  .landing-section .landing-container img
+    position: absolute
+    bottom: 0
+  .landing-section .landing-container .content .btn-container .btn
+    max-width: none !important
+  .landing-section .landing-container .content .btn-container .slider-btn
+    display: none !important
+  .landing-section .landing-container .content ul li
+    font-size: 14px !important
+  .landing-section .landing-container .content
+    gap: 30px !important
+  .landing-section .landing-container .content .title p:first-of-type
+    font-size: 64px !important
+  .landing-section .landing-container .content .title p:last-of-type
+    font-size: 24px !important
+  .landing-section .landing-container .content .title .tag
+    font-size: 16px !important
+    padding: 10px 20px !important
   .comparison-section .comparison-container .comparison-block .body
     width: 100%
     overflow: auto
@@ -461,12 +509,7 @@ $border_black_01: 1px solid $black_01
   section .product-section .product-container .info-block .body .navigation .item-n
     font-size: 30px !important
 
-@media screen and (max-width: 575px)
-  \:root
-    --container: 335px
-
 @media screen and (max-width: 425px)
-
   .faq-section .faq-container .btn
     max-width: none !important
   .job-section .job-container .body .accordion-item .accordion-button

@@ -1,4 +1,22 @@
 // Базовые стили для сайта
+
+\:root
+  --container: 335px
+
+  @media screen and (min-width: 576px)
+    --container: 540px !important
+  @media screen and (min-width: 768px)
+    --container: 720px !important
+  @media screen and (min-width: 992px)
+    --container: 960px !important
+  @media screen and (min-width: 1200px)
+    --container: 1000px !important
+  @media screen and (min-width: 1400px)
+    --container: 1200px !important
+  @media screen and (min-width: 1920px)
+    --container: 1760px !important
+
+
 $blue: #024D7F
 $white: #FFFFFF
 $white_04: rgba(255, 255, 255, 0.4)
@@ -11,8 +29,14 @@ $black_04: rgba(13, 13, 13, 0.4)
 $black_02: rgba(13, 13, 13, 0.2)
 $black_01: rgba(13, 13, 13, 0.1)
 
+$margin: calc((100vw - var(--container))/ 2)
+$minus_margin: calc(((100vw - var(--container)) / 2) * -1)
+
 $border_black_01: 1px solid $black_01
 
+@mixin no_container
+  width: 100vw
+  margin-left: $minus_margin
 
 @mixin background
   background-size: cover !important
@@ -206,7 +230,7 @@ a
     color: $white_04
 
 section:first-of-type
-  margin: 0
+  margin: 0 !important
 
 section
   margin-top: 80px
@@ -242,12 +266,12 @@ h1.title
     .info
       .name
         @include text_36_regular
-        margin-bottom: 15px
+        margin-bottom: 5px
         text-transform: uppercase
 
       .count
         line-height: 1.2
-        margin-bottom: 40px
+        margin-bottom: 20px
 
       .link
         background: $blue

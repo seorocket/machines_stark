@@ -2,7 +2,7 @@
   .item-p
     display: flex
     flex-direction: column
-    gap: 26px
+    gap: 15px
     background: $white
     border: 1px solid $black_01
 
@@ -33,11 +33,17 @@
         padding: 15px
         background: $light-blue
         border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
 
       .compare
         border-radius: 50%
         border: 1px solid $blue
-        padding: 15px
+        padding: 15px 17px
+        display: flex
+        align-items: center
+        justify-content: center
 
 @media screen and (max-width: 768px)
   .accordion-button::after
@@ -87,6 +93,7 @@
     font-size: 12px
   .product .header
     flex-direction: row !important
+    padding-bottom: 20px
 
   section .call-section .call-container .text
     gap: 20px

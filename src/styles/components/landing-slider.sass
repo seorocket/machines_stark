@@ -1,0 +1,70 @@
+.landing-section
+  background: url("/src/images/backgrounds/landing.jpg") no-repeat
+  padding: 80px 0 80px
+  background-size: cover
+
+  .landing-container
+    margin: 0 0 0 $margin
+
+    .swiper-slide
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      overflow: hidden
+
+    .content
+      display: flex
+      flex-direction: column
+      gap: 40px
+
+      .title
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 20px
+        align-items: center
+        p:first-of-type
+          font-size: 160px
+          line-height: .9
+          color: $blue
+          text-transform: uppercase
+          font-weight: 500
+
+        .tag
+          padding: 20px 30px
+          background: $white
+          color: $black
+          text-transform: uppercase
+          border-radius: 1000px
+          font-size: 64px
+          line-height: 1.1
+        p:last-of-type
+          text-transform: uppercase
+          color: $blue
+          font-size: 54px
+          line-height: 1
+          grid-column: span 2
+
+      .btn-container
+        display: flex
+        gap: 50px
+
+        .btn
+          max-width: 395px
+          @include text_20_regular
+
+        .slider-btn
+          display: flex
+          gap: 20px
+
+          .slider-btn
+            background: $white
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 60px
+            height: 60px
+            cursor: pointer
+
+
+          .slider-btn.prev
+            transform: rotate(180deg)

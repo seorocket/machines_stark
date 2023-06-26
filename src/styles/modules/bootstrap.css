@@ -5052,8 +5052,8 @@ textarea.form-control-lg {
 
 .accordion-button::after {
     flex-shrink: 0;
-    width: 46.39px;
-    height: 46.39px;
+    width: 45px;
+    height: 44px;
     /*margin-left: auto;*/
     content: "";
     background-image: var(--bs-accordion-btn-icon);
@@ -5991,7 +5991,7 @@ textarea.form-control-lg {
 .modal-dialog {
     position: relative;
     width: auto;
-    margin-top: 20rem;
+    margin-top: 20.accordion-button::afterrem;
     pointer-events: none;
 }
 

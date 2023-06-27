@@ -51,4 +51,15 @@ export function utils() {
         }
 
     })
+
+    /**
+     * Кнопка открытия аккардиона вакансий
+     */
+    $('.open-accordion.job').on('click', function () {
+        if ($(this).hasClass('collapsed')){
+            $(this).text('Показать еще')
+        } else {
+            $(this).text('Скрыть')
+        }
+    })
 }

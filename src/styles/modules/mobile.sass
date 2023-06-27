@@ -233,6 +233,27 @@
       display: none !important
 
 @media screen and (max-width: 768px)
+  .requisites-section .requisites-container > .content .item-r:nth-of-type(1), .requisites-section .requisites-container > .content .item-r:nth-of-type(2), .requisites-section .requisites-container > .content .item-r:nth-of-type(4), .requisites-section .requisites-container > .content .item-r:nth-of-type(6)
+    border-right: none !important
+  .lising-section .lising-container .content .item-l.big .text
+    gap: 20px !important
+  section .call-section .call-container .text.grid .item-t
+    max-width: var(--container)
+
+    .title
+      font-size: 30px !important
+    .content
+      font-size: 14px !important
+  section .call-section .call-container .form.grid form span
+    grid-column: auto !important
+  section .call-section .call-container .form.grid form
+    grid-template-columns: 1fr !important
+
+  section .call-section .call-container .form.grid p
+    margin-bottom: 0 !important
+    font-size: 30px !important
+  .map-container
+    max-width: none !important
   .snap-in-section .snap-in-container > .content .item-s img
     max-height: 275px
   .comparison-section .comparison-container
@@ -480,9 +501,12 @@
     font-size: 14px !important
   .about-section .about-container .content .text
     gap: 30px !important
+  section:last-child .about-section .about-container .content .text .big-text
+    text-transform: uppercase
   .about-section .about-container .content .text .big-text,
   .about-section .about-container .content .text .big-text span
     font-size: 20px !important
+    font-weight: 500 !important
 
   .about-section .about-container .title
     margin-bottom: 35px !important

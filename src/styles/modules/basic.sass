@@ -29,7 +29,7 @@ $black_04: rgba(13, 13, 13, 0.4)
 $black_02: rgba(13, 13, 13, 0.2)
 $black_01: rgba(13, 13, 13, 0.1)
 
-$margin: calc((100vw - var(--container))/ 2)
+$margin: calc((100vw - var(--container)) / 2)
 $minus_margin: calc(((100vw - var(--container)) / 2) * -1)
 
 $border_black_01: 1px solid $black_01
@@ -118,6 +118,11 @@ p
 a
   text-decoration: none
   color: $black
+
+.mobile
+  display: none
+  @media screen and (max-width: 768px)
+    display: block
 
 .btn
   cursor: pointer

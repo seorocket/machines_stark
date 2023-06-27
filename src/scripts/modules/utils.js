@@ -2,11 +2,14 @@ export function utils() {
     /**
      * Открытие закрытие каталога
      */
-    $('.btn.catalog').on('click', () => {
+    $('.btn.openMenuCatalog').on('click', () => {
         if ($('.catalog-menu').hasClass('show')) {
             $('.catalog-menu').removeClass('show');
+            $('body').removeClass('fixed');
         } else {
             $('.catalog-menu').addClass('show');
+            $('body').addClass('fixed');
+
         }
     })
 

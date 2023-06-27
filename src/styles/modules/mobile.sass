@@ -1,4 +1,13 @@
 @media screen and (max-width: 1919px)
+  section .call-section .call-container .form
+    gap: 20px !important
+  header .catalog-menu.show
+    height: 90vh
+    min-height: 500px
+    overflow: auto
+  header .catalog-menu.show .container .body
+    grid-template-columns: 1fr !important
+    gap: 20px !important
   .comparison-section .comparison-container .comparison-block .body .item-c .values .characteristic,
   .comparison-section .comparison-container .comparison-block .header
     grid-template-columns: repeat(5, 1fr) !important
@@ -50,6 +59,19 @@
     grid-column: span 2 !important
 
 @media screen and (max-width: 1400px)
+  .catalog-page-section .catalog-page-container .products .categories .item-c
+    border: none !important
+  .catalog-page-section .catalog-page-container .products .categories .item-c
+    border-top: $border_black_01 !important
+  .catalog-page-section .catalog-page-container .products .categories .item-c:nth-last-child(-n+2)
+    border-bottom: $border_black_01 !important
+  .catalog-page-section .catalog-page-container .products .categories .item-c:nth-of-type(1),
+  .catalog-page-section .catalog-page-container .products .categories .item-c:nth-of-type(3)
+    border-left: $border_black_01 !important
+  .catalog-page-section .catalog-page-container .products .categories .item-c:nth-of-type(2),
+  .catalog-page-section .catalog-page-container .products .categories .item-c:nth-of-type(4)
+    border-right: $border_black_01 !important
+    border-left: $border_black_01 !important
   footer .second-footer
     grid-template-columns: repeat(3, 1fr) !important
 
@@ -135,7 +157,6 @@
   .application-section .application-container .content
     grid-template-columns: 1fr !important
   .delivery-section .delivery-container .content
-  .delivery-section .delivery-container .content
     gap: 100px !important
   .requisites-section .requisites-container > .content
     grid-template-columns: repeat(2, 1fr) !important
@@ -212,6 +233,25 @@
       display: none !important
 
 @media screen and (max-width: 768px)
+  .snap-in-section .snap-in-container > .content .item-s img
+    max-height: 275px
+  .comparison-section .comparison-container
+    gap: 20px !important
+  .breadcrumbs-section
+    margin-top: 20px !important
+  section .product-section .product-container .info-block .body .tabs .item-t
+    @include no_container
+
+  section .product-section .product-container .info-block .body .tabs .item-t .content .item-c p
+    .breadcrumbs-section
+      margin-top: 40px !important
+      margin-bottom: -40px !important
+  footer .second-footer .info-block
+    grid-row: span 2 !important
+  footer .second-footer
+    grid-template-columns: repeat(2, 1fr) !important
+    gap: 20px !important
+
   section .blog-section .blog-container .item-b
     height: 260px
     gap: 0 !important
@@ -488,6 +528,7 @@
     grid-template-columns: 1fr !important
   section .product-section .product-container .info-block .body .navigation
     overflow: scroll
+    max-width: calc((100vw - $margin))
   footer .main-footer nav .item-f .title
     display: block !important
   section .catalog-section .catalog-container .all-machines

@@ -38,6 +38,7 @@ header
 
     .btn.catalog
       background: $black_005
+
       p
         @include text_16_medium
 
@@ -45,6 +46,7 @@ header
     .btn.compare
       border: 1px solid $black_005
       color: $blue
+
       p
         @include text_16_medium
 
@@ -82,6 +84,7 @@ header
 
   .catalog-menu
     display: none
+
   .catalog-menu.show
     padding: 40px 0
     background: $white
@@ -90,7 +93,7 @@ header
     top: calc(100% + 1px)
     left: 0
     display: block
-    z-index: 2
+    z-index: 3
 
     .container
       display: flex
@@ -99,7 +102,6 @@ header
 
       .header
         display: flex
-        align-items: flex-end
         gap: 10px
 
         .title
@@ -110,10 +112,13 @@ header
           @include text_16_regular
           line-height: 1.6
 
+        img
+          height: 178px
+
       .body
         display: grid
         grid-template-columns: repeat(2, 1fr)
-        gap: 40px 20px
+        gap: 10px 40px
 
         .categories
           display: grid
@@ -133,6 +138,15 @@ header
             text-transform: uppercase
             @include text_16_medium
 
-
+body.fixed:before
+  content: ''
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  /* Adjust the opacity (0.5) for the desired darkness */
+  z-index: 1
 
 

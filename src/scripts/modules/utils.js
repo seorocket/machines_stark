@@ -40,7 +40,7 @@ export function utils() {
     $('.burger-menu').on('click', function () {
         const menu = $('.mobile-menu')
         const burgerText = $(this).find('p')
-        if(menu.hasClass('show')){
+        if (menu.hasClass('show')) {
             menu.removeClass('show')
             $(this).removeClass('hide')
             burgerText.text('меню')
@@ -56,10 +56,27 @@ export function utils() {
      * Кнопка открытия аккардиона вакансий
      */
     $('.open-accordion.job').on('click', function () {
-        if ($(this).hasClass('collapsed')){
+        if ($(this).hasClass('collapsed')) {
             $(this).text('Показать еще')
         } else {
             $(this).text('Скрыть')
         }
+    })
+
+    /**
+     * Переключение картинок карточки товара
+     * @param img
+     */
+    function changeImage(img) {
+
+    }
+
+    $('.photos .item-p').on('click', function () {
+        const src = $(this).find('img').attr('src')
+        changeImage(src)
+    })
+
+    document.ready(() => {
+
     })
 }

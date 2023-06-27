@@ -240,6 +240,9 @@ section
           grid-template-columns: 425px 1fr
           gap: 20px
           // width: 100%
+          .photos::-webkit-scrollbar
+            width: 0
+
           .photos
             display: flex
             gap: 10px
@@ -251,7 +254,7 @@ section
               height: 60px
 
               img
-                width: 100%
+                width: 100px
                 height: 100%
                 object-fit: contain
 
@@ -284,6 +287,8 @@ section
           flex-direction: column
           gap: 23px
 
+          .navigation::-webkit-scrollbar
+            width: 0
           .navigation
             display: flex
             gap: 40px
@@ -890,6 +895,7 @@ section
       .item-r:nth-of-type(4),
       .item-r:nth-of-type(6)
         border-right: .5px solid $black_01
+
       .item-r
         grid-column: span 2
         padding: 40px 40px 50px
@@ -916,6 +922,7 @@ section
   .job-container
     .btn.blue
       @include text_20_regular
+
     .title
       margin-bottom: 35px
 
@@ -1115,6 +1122,7 @@ section
   .privacy-container
     max-width: 70%
     min-width: 335px
+
     .title
       margin-bottom: 35px
 

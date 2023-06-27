@@ -233,6 +233,12 @@
       display: none !important
 
 @media screen and (max-width: 768px)
+  section .product-section .product-container .media-block .elements .photos
+    flex: 1
+  section .product-section .product-container .media-block .elements
+    overflow: hidden
+  section .product-section .product-container .media-block .elements .photos .item-p img
+    width: 70px !important
   .requisites-section .requisites-container > .content .item-r:nth-of-type(1), .requisites-section .requisites-container > .content .item-r:nth-of-type(2), .requisites-section .requisites-container > .content .item-r:nth-of-type(4), .requisites-section .requisites-container > .content .item-r:nth-of-type(6)
     border-right: none !important
   .lising-section .lising-container .content .item-l.big .text
@@ -545,7 +551,10 @@
     left: 0
     padding: 40px
   section .product-section .product-container .media-block .elements
-    grid-template-columns: 158px 1fr !important
+    display: flex !important
+    gap: 10px !important
+    .btn
+      max-width: 158px !important
   .staff-section .staff-container .content .item-c .content-container .img
     height: 360px
   .staff-section .staff-container .content .item-c .content-container

@@ -65,10 +65,11 @@ export function utils() {
 
     /**
      * Переключение картинок карточки товара
-     * @param img
+     * @param src
      */
-    function changeImage(img) {
-
+    function changeImage(src) {
+        const photo = $('#mainPhoto')
+        photo.attr('src', src)
     }
 
     $('.photos .item-p').on('click', function () {
@@ -76,7 +77,8 @@ export function utils() {
         changeImage(src)
     })
 
-    document.ready(() => {
-
+    $(document).ready(function () {
+        const src = $('.photos .item-p').eq(0).find('img').attr('src')
+        changeImage(src)
     })
 }
